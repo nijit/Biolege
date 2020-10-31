@@ -112,21 +112,21 @@ class MyApp extends StatelessWidget {
                   ],
                 ), //Diagnostics
                 SizedBox(height: 20),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [Text('search Bar')],
-                ),
-                SizedBox(height: 20),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      'Here Put The Ad Image',
-                      style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
+                Container(
+                  margin: EdgeInsets.all(10),
+                  child: TextField(
+                    decoration: InputDecoration(
+                      labelText: 'Search for lab, test name etc',
+                      labelStyle: TextStyle(fontFamily: 'Nunito'),
+                      border: OutlineInputBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(25))),
+                      suffixIcon: Icon(Icons.search),
                     ),
-                  ],
+                  ),
                 ),
+                Row(
+                  children: [],
+                ), //searchbar
                 SizedBox(height: 20),
                 Row(
                   children: [
@@ -256,16 +256,33 @@ class MyApp extends StatelessWidget {
                   ],
                 ), //Select test from labs
                 SizedBox(height: 20),
+
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Text(
-                      'Here Put The Swipeable',
-                      style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
+                    Image.asset(
+                      'images/one.png',
+                      height: 30,
                     ),
+                    Image.asset(
+                      'images/Thyrocare.png',
+                      height: 30,
+                    ),
+                    Row(
+                      children: [
+                        Image.asset(
+                          'images/HAMM.png',
+                          height: 30,
+                        ),
+                        Text(
+                          'HAMM',
+                          style: TextStyle(fontFamily: 'Nunito'),
+                        )
+                      ],
+                    )
                   ],
-                ), //swipeable put
+                ),
+                //swipeable put
                 SizedBox(height: 20),
                 Row(
                   children: [
