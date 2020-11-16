@@ -1,7 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:biolege/ConfirmationPage.dart';
 
-class WhenLabNot extends StatelessWidget {
+class WhenLabSelect extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,7 +41,7 @@ class WhenLabNot extends StatelessWidget {
                 height: 20,
               ),
               Row(
-                mainAxisAlignment: MainAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
                     'Thyroid profile, total',
@@ -48,8 +49,26 @@ class WhenLabNot extends StatelessWidget {
                         fontFamily: 'Nunito',
                         fontSize: 20,
                         fontWeight: FontWeight.w600),
-                  ), //diagnostics
-                  //searchbar
+                  ),
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => ConfirmationPage()));
+                    },
+                    child: Container(
+                      padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+                      decoration: BoxDecoration(
+                        color: Color(0xffFF8900),
+                        borderRadius: BorderRadius.all(Radius.circular(5)),
+                      ),
+                      child: Text(
+                        'Add to cart',
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ),
+                  )
                 ],
               ), //Thyroid profile, total
               SizedBox(
@@ -77,6 +96,16 @@ class WhenLabNot extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text('Select laboratory'),
+                              Text(r'$ 400')
+                            ],
+                          ), //trusted
+                          SizedBox(
+                            height: 5,
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text('Dr Lal Pathlabs'),
                               Container(
                                 decoration: BoxDecoration(
                                   color: Color.fromRGBO(1, 188, 8, 1),
@@ -101,111 +130,49 @@ class WhenLabNot extends StatelessWidget {
                                     ],
                                   ),
                                 ),
-                              ),
+                              ), //Trusted
                             ],
-                          ), //trusted
+                          ),
                           SizedBox(
-                            height: 5,
+                            height: 15,
                           ),
                           Row(
-                            mainAxisAlignment: MainAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Container(
-                                child: Container(
-                                  color: Colors.white,
-                                  child: Container(
-                                    margin: EdgeInsets.all(5),
-                                    decoration: BoxDecoration(
-                                        border: Border.all(
-                                            color: Color(0xff808080)),
-                                        color: Colors.white,
-                                        borderRadius: BorderRadius.all(
-                                            Radius.circular(20.0))),
-                                    child: Container(
-                                      margin: EdgeInsets.all(10),
-                                      child: Column(
-                                        children: [
-                                          Row(
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.center,
-                                            children: [
-                                              Image.asset(
-                                                'images/one.png',
-                                                height: 30,
-                                              )
-                                            ],
-                                          ),
-                                          SizedBox(
-                                            height: 5,
-                                          ),
-                                          Row(
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.center,
-                                            children: [Text('Dr Lal Pathlabs')],
-                                          ),
-                                          SizedBox(
-                                            height: 5,
-                                          ),
-                                          Row(
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.center,
-                                            children: [Text(r'$400')],
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                  ),
-                                ),
+                              Image.asset(
+                                'images/one.png',
+                                height: 30,
                               ),
-                              SizedBox(
-                                width: 5,
+                              Text('NABL, CAP, ISO') //Trusted
+                            ],
+                          ), //NABL, CAP, ISO
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            children: [
+                              Icon(
+                                Icons.star,
+                                color: Colors.green,
+                                size: 15,
                               ),
-                              Container(
-                                child: Container(
-                                  color: Colors.white,
-                                  child: Container(
-                                    margin: EdgeInsets.all(5),
-                                    decoration: BoxDecoration(
-                                        border: Border.all(
-                                            color: Color(0xff808080)),
-                                        color: Colors.white,
-                                        borderRadius: BorderRadius.all(
-                                            Radius.circular(20.0))),
-                                    child: Container(
-                                      margin: EdgeInsets.all(10),
-                                      child: Column(
-                                        children: [
-                                          Row(
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.center,
-                                            children: [
-                                              Image.asset(
-                                                'images/one.png',
-                                                height: 30,
-                                              )
-                                            ],
-                                          ),
-                                          SizedBox(
-                                            height: 5,
-                                          ),
-                                          Row(
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.center,
-                                            children: [Text('Dr Lal Pathlabs')],
-                                          ),
-                                          SizedBox(
-                                            height: 5,
-                                          ),
-                                          Row(
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.center,
-                                            children: [Text(r'$400')],
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                  ),
-                                ),
+                              Icon(
+                                Icons.star,
+                                color: Colors.green,
+                                size: 15,
+                              ),
+                              Icon(
+                                Icons.star,
+                                color: Colors.green,
+                                size: 15,
+                              ),
+                              Icon(
+                                Icons.star,
+                                color: Colors.green,
+                                size: 15,
+                              ),
+                              Icon(
+                                Icons.star,
+                                color: Colors.green,
+                                size: 15,
                               ),
                             ],
                           )
@@ -618,7 +585,145 @@ class WhenLabNot extends StatelessWidget {
                 thickness: 1,
               ),
               SizedBox(
-                height: 10,
+                height: 20,
+              ),
+              Container(
+                child: Container(
+                  color: Colors.white,
+                  child: Container(
+                    margin: EdgeInsets.all(5),
+                    decoration: BoxDecoration(
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.withOpacity(.4),
+                            blurRadius: 5,
+                          )
+                        ],
+                        color: Colors.white,
+                        borderRadius: BorderRadius.all(Radius.circular(20.0))),
+                    child: Container(
+                      margin: EdgeInsets.all(15),
+                      child: Column(
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Text('Other lab prices'),
+                            ],
+                          ), //trusted
+                          SizedBox(
+                            height: 10,
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Container(
+                                child: Container(
+                                  color: Colors.white,
+                                  child: Container(
+                                    margin: EdgeInsets.all(5),
+                                    decoration: BoxDecoration(
+                                        border: Border.all(
+                                            color: Color(0xff808080)),
+                                        color: Colors.white,
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(20.0))),
+                                    child: Container(
+                                      margin: EdgeInsets.all(10),
+                                      child: Column(
+                                        children: [
+                                          Row(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.center,
+                                            children: [
+                                              Image.asset(
+                                                'images/Thyrocare.png',
+                                                height: 30,
+                                              )
+                                            ],
+                                          ),
+                                          SizedBox(
+                                            height: 5,
+                                          ),
+                                          Row(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.center,
+                                            children: [Text('Thyrocare')],
+                                          ),
+                                          SizedBox(
+                                            height: 5,
+                                          ),
+                                          Row(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.center,
+                                            children: [Text(r'$400')],
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                width: 5,
+                              ),
+                              Container(
+                                child: Container(
+                                  color: Colors.white,
+                                  child: Container(
+                                    margin: EdgeInsets.all(5),
+                                    decoration: BoxDecoration(
+                                        border: Border.all(
+                                            color: Color(0xff808080)),
+                                        color: Colors.white,
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(20.0))),
+                                    child: Container(
+                                      margin: EdgeInsets.all(10),
+                                      child: Column(
+                                        children: [
+                                          Row(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.center,
+                                            children: [
+                                              Image.asset(
+                                                'images/Thyrocare.png',
+                                                height: 30,
+                                              )
+                                            ],
+                                          ),
+                                          SizedBox(
+                                            height: 5,
+                                          ),
+                                          Row(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.center,
+                                            children: [Text('HAMMH')],
+                                          ),
+                                          SizedBox(
+                                            height: 5,
+                                          ),
+                                          Row(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.center,
+                                            children: [Text(r'$400')],
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 20,
               ),
             ],
           ),

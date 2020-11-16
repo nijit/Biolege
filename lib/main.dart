@@ -5,6 +5,7 @@ import 'package:biolege/MyAccountWithout.dart';
 import 'package:biolege/SearchPage.dart';
 import 'package:biolege/ViewAllPage.dart';
 import 'package:biolege/WhenLabNot.dart';
+import 'package:biolege/WhenLabSelect.dart';
 
 void main() {
   runApp(MyApp());
@@ -583,197 +584,225 @@ class Home extends StatelessWidget {
                             children: [
                               Padding(
                                 padding: EdgeInsets.all(10),
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                      boxShadow: [
-                                        BoxShadow(
-                                          color: Colors.grey.withOpacity(.4),
-                                          blurRadius: 10,
-                                        )
-                                      ],
-                                      color: Colors.white,
-                                      borderRadius: BorderRadius.all(
-                                          Radius.circular(15))),
-                                  width: 210,
-// color: Colors.greenAccent,
-                                  child: Column(
-                                    children: [
-                                      Row(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.end,
-                                        children: [
-                                          Container(
-                                            decoration: BoxDecoration(
-                                                color: Color.fromRGBO(
-                                                    1, 188, 8, 1),
-                                                borderRadius: BorderRadius.only(
-                                                    topRight:
-                                                        Radius.circular(15))),
-                                            child: Padding(
-                                              padding: EdgeInsets.symmetric(
-                                                  horizontal: 5, vertical: 3),
-                                              child: Row(
-                                                children: [
-                                                  Icon(
-                                                    Icons.done_all,
-                                                    color: Colors.white,
-                                                    size: 15,
-                                                  ),
-                                                  Text(
-                                                    'Trusted',
-                                                    style: TextStyle(
-                                                        fontSize: 10,
-                                                        fontFamily: 'Nunito',
-                                                        color: Colors.white),
-                                                  )
-                                                ],
-                                              ),
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                      SizedBox(
-                                        height: 10,
-                                      ), //Trusted
-                                      Row(
-                                        children: [
-                                          Padding(
-                                            padding: EdgeInsets.only(left: 10),
-                                            child: Text(
-                                              'HbA1c',
-                                              style: TextStyle(
-                                                  fontSize: 16,
-                                                  fontFamily: 'Nunito',
-                                                  fontWeight: FontWeight.w600),
-                                            ),
-                                          ),
-                                        ],
-                                      ), //BasicHealth
-                                      Row(
-                                        children: [
-                                          Padding(
-                                            padding: EdgeInsets.only(left: 10),
-                                            child: Text(
-                                              '12 test included',
-                                              style: TextStyle(
-                                                  fontSize: 13,
-                                                  fontFamily: 'Nunito',
-                                                  fontWeight: FontWeight.w400),
-                                            ),
-                                          ),
-                                        ],
-                                      ), //12 Test Included
-                                      SizedBox(
-                                        height: 12,
-                                      ),
-                                      Row(
-                                        children: [
-                                          Padding(
-                                            padding: EdgeInsets.only(left: 10),
-                                            child: Image.asset(
-                                              'images/one.png',
-                                              width: 100,
-                                            ),
+                                child: InkWell(
+                                  onTap: () {
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) =>
+                                                WhenLabSelect()));
+                                  },
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                        boxShadow: [
+                                          BoxShadow(
+                                            color: Colors.grey.withOpacity(.4),
+                                            blurRadius: 10,
                                           )
                                         ],
-                                      ), //image
-                                      SizedBox(
-                                        height: 20,
-                                      ),
-                                      Row(
-                                        children: [
-                                          Padding(
-                                            padding: EdgeInsets.only(left: 10),
-                                            child: Text(
-                                              'Report within 48 hours',
-                                              style: TextStyle(
-                                                  fontSize: 13,
-                                                  fontFamily: 'Nunito',
-                                                  fontWeight: FontWeight.w400),
-                                            ),
-                                          ),
-                                        ],
-                                      ), //report
-                                      SizedBox(
-                                        height: 10,
-                                      ),
-                                      Row(
-                                        children: [
-                                          Padding(
-                                            padding: EdgeInsets.only(left: 10),
-                                            child: Text(
-                                              'Offer display',
-                                              style: TextStyle(
+                                        color: Colors.white,
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(15))),
+                                    width: 210,
+// color: Colors.greenAccent,
+                                    child: Column(
+                                      children: [
+                                        Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.end,
+                                          children: [
+                                            Container(
+                                              decoration: BoxDecoration(
                                                   color: Color.fromRGBO(
                                                       1, 188, 8, 1),
-                                                  fontSize: 13,
-                                                  fontFamily: 'Nunito',
-                                                  fontWeight: FontWeight.w400),
+                                                  borderRadius:
+                                                      BorderRadius.only(
+                                                          topRight:
+                                                              Radius.circular(
+                                                                  15))),
+                                              child: Padding(
+                                                padding: EdgeInsets.symmetric(
+                                                    horizontal: 5, vertical: 3),
+                                                child: Row(
+                                                  children: [
+                                                    Icon(
+                                                      Icons.done_all,
+                                                      color: Colors.white,
+                                                      size: 15,
+                                                    ),
+                                                    Text(
+                                                      'Trusted',
+                                                      style: TextStyle(
+                                                          fontSize: 10,
+                                                          fontFamily: 'Nunito',
+                                                          color: Colors.white),
+                                                    )
+                                                  ],
+                                                ),
+                                              ),
                                             ),
-                                          ),
-                                        ],
-                                      ),
-                                      SizedBox(
-                                        height: 10,
-                                      ), //OfferDisplay
-                                      Row(
-                                        children: [
-                                          Padding(
-                                            padding: EdgeInsets.only(left: 10),
-                                            child: Text(
-                                              'MRP',
+                                          ],
+                                        ),
+                                        SizedBox(
+                                          height: 10,
+                                        ), //Trusted
+                                        Row(
+                                          children: [
+                                            Padding(
+                                              padding:
+                                                  EdgeInsets.only(left: 10),
+                                              child: Text(
+                                                'HbA1c',
+                                                style: TextStyle(
+                                                    fontSize: 16,
+                                                    fontFamily: 'Nunito',
+                                                    fontWeight:
+                                                        FontWeight.w600),
+                                              ),
+                                            ),
+                                          ],
+                                        ), //BasicHealth
+                                        Row(
+                                          children: [
+                                            Padding(
+                                              padding:
+                                                  EdgeInsets.only(left: 10),
+                                              child: Text(
+                                                '12 test included',
+                                                style: TextStyle(
+                                                    fontSize: 13,
+                                                    fontFamily: 'Nunito',
+                                                    fontWeight:
+                                                        FontWeight.w400),
+                                              ),
+                                            ),
+                                          ],
+                                        ), //12 Test Included
+                                        SizedBox(
+                                          height: 12,
+                                        ),
+                                        Row(
+                                          children: [
+                                            Padding(
+                                              padding:
+                                                  EdgeInsets.only(left: 10),
+                                              child: Image.asset(
+                                                'images/one.png',
+                                                width: 100,
+                                              ),
+                                            )
+                                          ],
+                                        ), //image
+                                        SizedBox(
+                                          height: 20,
+                                        ),
+                                        Row(
+                                          children: [
+                                            Padding(
+                                              padding:
+                                                  EdgeInsets.only(left: 10),
+                                              child: Text(
+                                                'Report within 48 hours',
+                                                style: TextStyle(
+                                                    fontSize: 13,
+                                                    fontFamily: 'Nunito',
+                                                    fontWeight:
+                                                        FontWeight.w400),
+                                              ),
+                                            ),
+                                          ],
+                                        ), //report
+                                        SizedBox(
+                                          height: 10,
+                                        ),
+                                        Row(
+                                          children: [
+                                            Padding(
+                                              padding:
+                                                  EdgeInsets.only(left: 10),
+                                              child: Text(
+                                                'Offer display',
+                                                style: TextStyle(
+                                                    color: Color.fromRGBO(
+                                                        1, 188, 8, 1),
+                                                    fontSize: 13,
+                                                    fontFamily: 'Nunito',
+                                                    fontWeight:
+                                                        FontWeight.w400),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                        SizedBox(
+                                          height: 10,
+                                        ), //OfferDisplay
+                                        Row(
+                                          children: [
+                                            Padding(
+                                              padding:
+                                                  EdgeInsets.only(left: 10),
+                                              child: Text(
+                                                'MRP',
+                                                style: TextStyle(
+                                                    fontFamily: 'Nunito',
+                                                    fontWeight:
+                                                        FontWeight.w400),
+                                              ),
+                                            ),
+                                            SizedBox(
+                                              width: 5,
+                                            ),
+                                            Text(
+                                              '₹1000',
                                               style: TextStyle(
                                                   fontFamily: 'Nunito',
-                                                  fontWeight: FontWeight.w400),
+                                                  decoration: TextDecoration
+                                                      .lineThrough),
                                             ),
-                                          ),
-                                          SizedBox(
-                                            width: 5,
-                                          ),
-                                          Text(
-                                            '₹1000',
-                                            style: TextStyle(
-                                                fontFamily: 'Nunito',
-                                                decoration:
-                                                    TextDecoration.lineThrough),
-                                          ),
-                                          SizedBox(
-                                            width: 50,
-                                          ),
-                                          Text(
-                                            '₹799',
-                                            style: TextStyle(
-                                                fontSize: 20,
-                                                fontWeight: FontWeight.w600,
-                                                fontFamily: 'Nunito'),
-                                          ),
-                                        ],
-                                      ),
-                                      SizedBox(
-                                        height: 10,
-                                      ), //price
-                                      Row(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
-                                        children: [
-                                          ButtonTheme(
-                                            minWidth: 12,
-                                            height: 30,
-                                            buttonColor: Colors.orange,
-                                            child: RaisedButton(
-                                              onPressed: () {},
-                                              child: Text('Book Now',
-                                                  style: TextStyle(
-                                                      fontFamily: 'Nunito',
-                                                      fontWeight:
-                                                          FontWeight.w600,
-                                                      fontSize: 15,
-                                                      color: Colors.white)),
+                                            SizedBox(
+                                              width: 50,
                                             ),
-                                          ),
-                                        ],
-                                      ), //book now
-                                    ],
+                                            Text(
+                                              '₹799',
+                                              style: TextStyle(
+                                                  fontSize: 20,
+                                                  fontWeight: FontWeight.w600,
+                                                  fontFamily: 'Nunito'),
+                                            ),
+                                          ],
+                                        ),
+                                        SizedBox(
+                                          height: 10,
+                                        ), //price
+                                        Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
+                                          children: [
+                                            ButtonTheme(
+                                              minWidth: 12,
+                                              height: 30,
+                                              buttonColor: Colors.orange,
+                                              child: RaisedButton(
+                                                onPressed: () {
+                                                  Navigator.push(
+                                                      context,
+                                                      MaterialPageRoute(
+                                                          builder: (context) =>
+                                                              WhenLabSelect()));
+                                                },
+                                                child: Text('Book Now',
+                                                    style: TextStyle(
+                                                        fontFamily: 'Nunito',
+                                                        fontWeight:
+                                                            FontWeight.w600,
+                                                        fontSize: 15,
+                                                        color: Colors.white)),
+                                              ),
+                                            ),
+                                          ],
+                                        ), //book now
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ),
@@ -782,197 +811,225 @@ class Home extends StatelessWidget {
                               ),
                               Padding(
                                 padding: EdgeInsets.all(10),
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                      boxShadow: [
-                                        BoxShadow(
-                                          color: Colors.grey.withOpacity(.4),
-                                          blurRadius: 10,
-                                        )
-                                      ],
-                                      color: Colors.white,
-                                      borderRadius: BorderRadius.all(
-                                          Radius.circular(15))),
-                                  width: 210,
-// color: Colors.greenAccent,
-                                  child: Column(
-                                    children: [
-                                      Row(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.end,
-                                        children: [
-                                          Container(
-                                            decoration: BoxDecoration(
-                                                color: Color.fromRGBO(
-                                                    1, 188, 8, 1),
-                                                borderRadius: BorderRadius.only(
-                                                    topRight:
-                                                        Radius.circular(15))),
-                                            child: Padding(
-                                              padding: EdgeInsets.symmetric(
-                                                  horizontal: 5, vertical: 3),
-                                              child: Row(
-                                                children: [
-                                                  Icon(
-                                                    Icons.done_all,
-                                                    color: Colors.white,
-                                                    size: 15,
-                                                  ),
-                                                  Text(
-                                                    'Trusted',
-                                                    style: TextStyle(
-                                                        fontSize: 10,
-                                                        fontFamily: 'Nunito',
-                                                        color: Colors.white),
-                                                  )
-                                                ],
-                                              ),
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                      SizedBox(
-                                        height: 10,
-                                      ), //Trusted
-                                      Row(
-                                        children: [
-                                          Padding(
-                                            padding: EdgeInsets.only(left: 10),
-                                            child: Text(
-                                              'HbA1c',
-                                              style: TextStyle(
-                                                  fontSize: 16,
-                                                  fontFamily: 'Nunito',
-                                                  fontWeight: FontWeight.w600),
-                                            ),
-                                          ),
-                                        ],
-                                      ), //BasicHealth
-                                      Row(
-                                        children: [
-                                          Padding(
-                                            padding: EdgeInsets.only(left: 10),
-                                            child: Text(
-                                              '12 test included',
-                                              style: TextStyle(
-                                                  fontSize: 13,
-                                                  fontFamily: 'Nunito',
-                                                  fontWeight: FontWeight.w400),
-                                            ),
-                                          ),
-                                        ],
-                                      ), //12 Test Included
-                                      SizedBox(
-                                        height: 12,
-                                      ),
-                                      Row(
-                                        children: [
-                                          Padding(
-                                            padding: EdgeInsets.only(left: 10),
-                                            child: Image.asset(
-                                              'images/one.png',
-                                              width: 100,
-                                            ),
+                                child: InkWell(
+                                  onTap: () {
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) =>
+                                                WhenLabSelect()));
+                                  },
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                        boxShadow: [
+                                          BoxShadow(
+                                            color: Colors.grey.withOpacity(.4),
+                                            blurRadius: 10,
                                           )
                                         ],
-                                      ), //image
-                                      SizedBox(
-                                        height: 20,
-                                      ),
-                                      Row(
-                                        children: [
-                                          Padding(
-                                            padding: EdgeInsets.only(left: 10),
-                                            child: Text(
-                                              'Report within 48 hours',
-                                              style: TextStyle(
-                                                  fontSize: 13,
-                                                  fontFamily: 'Nunito',
-                                                  fontWeight: FontWeight.w400),
-                                            ),
-                                          ),
-                                        ],
-                                      ), //report
-                                      SizedBox(
-                                        height: 10,
-                                      ),
-                                      Row(
-                                        children: [
-                                          Padding(
-                                            padding: EdgeInsets.only(left: 10),
-                                            child: Text(
-                                              'Offer display',
-                                              style: TextStyle(
+                                        color: Colors.white,
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(15))),
+                                    width: 210,
+// color: Colors.greenAccent,
+                                    child: Column(
+                                      children: [
+                                        Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.end,
+                                          children: [
+                                            Container(
+                                              decoration: BoxDecoration(
                                                   color: Color.fromRGBO(
                                                       1, 188, 8, 1),
-                                                  fontSize: 13,
-                                                  fontFamily: 'Nunito',
-                                                  fontWeight: FontWeight.w400),
+                                                  borderRadius:
+                                                      BorderRadius.only(
+                                                          topRight:
+                                                              Radius.circular(
+                                                                  15))),
+                                              child: Padding(
+                                                padding: EdgeInsets.symmetric(
+                                                    horizontal: 5, vertical: 3),
+                                                child: Row(
+                                                  children: [
+                                                    Icon(
+                                                      Icons.done_all,
+                                                      color: Colors.white,
+                                                      size: 15,
+                                                    ),
+                                                    Text(
+                                                      'Trusted',
+                                                      style: TextStyle(
+                                                          fontSize: 10,
+                                                          fontFamily: 'Nunito',
+                                                          color: Colors.white),
+                                                    )
+                                                  ],
+                                                ),
+                                              ),
                                             ),
-                                          ),
-                                        ],
-                                      ),
-                                      SizedBox(
-                                        height: 10,
-                                      ), //OfferDisplay
-                                      Row(
-                                        children: [
-                                          Padding(
-                                            padding: EdgeInsets.only(left: 10),
-                                            child: Text(
-                                              'MRP',
+                                          ],
+                                        ),
+                                        SizedBox(
+                                          height: 10,
+                                        ), //Trusted
+                                        Row(
+                                          children: [
+                                            Padding(
+                                              padding:
+                                                  EdgeInsets.only(left: 10),
+                                              child: Text(
+                                                'HbA1c',
+                                                style: TextStyle(
+                                                    fontSize: 16,
+                                                    fontFamily: 'Nunito',
+                                                    fontWeight:
+                                                        FontWeight.w600),
+                                              ),
+                                            ),
+                                          ],
+                                        ), //BasicHealth
+                                        Row(
+                                          children: [
+                                            Padding(
+                                              padding:
+                                                  EdgeInsets.only(left: 10),
+                                              child: Text(
+                                                '12 test included',
+                                                style: TextStyle(
+                                                    fontSize: 13,
+                                                    fontFamily: 'Nunito',
+                                                    fontWeight:
+                                                        FontWeight.w400),
+                                              ),
+                                            ),
+                                          ],
+                                        ), //12 Test Included
+                                        SizedBox(
+                                          height: 12,
+                                        ),
+                                        Row(
+                                          children: [
+                                            Padding(
+                                              padding:
+                                                  EdgeInsets.only(left: 10),
+                                              child: Image.asset(
+                                                'images/one.png',
+                                                width: 100,
+                                              ),
+                                            )
+                                          ],
+                                        ), //image
+                                        SizedBox(
+                                          height: 20,
+                                        ),
+                                        Row(
+                                          children: [
+                                            Padding(
+                                              padding:
+                                                  EdgeInsets.only(left: 10),
+                                              child: Text(
+                                                'Report within 48 hours',
+                                                style: TextStyle(
+                                                    fontSize: 13,
+                                                    fontFamily: 'Nunito',
+                                                    fontWeight:
+                                                        FontWeight.w400),
+                                              ),
+                                            ),
+                                          ],
+                                        ), //report
+                                        SizedBox(
+                                          height: 10,
+                                        ),
+                                        Row(
+                                          children: [
+                                            Padding(
+                                              padding:
+                                                  EdgeInsets.only(left: 10),
+                                              child: Text(
+                                                'Offer display',
+                                                style: TextStyle(
+                                                    color: Color.fromRGBO(
+                                                        1, 188, 8, 1),
+                                                    fontSize: 13,
+                                                    fontFamily: 'Nunito',
+                                                    fontWeight:
+                                                        FontWeight.w400),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                        SizedBox(
+                                          height: 10,
+                                        ), //OfferDisplay
+                                        Row(
+                                          children: [
+                                            Padding(
+                                              padding:
+                                                  EdgeInsets.only(left: 10),
+                                              child: Text(
+                                                'MRP',
+                                                style: TextStyle(
+                                                    fontFamily: 'Nunito',
+                                                    fontWeight:
+                                                        FontWeight.w400),
+                                              ),
+                                            ),
+                                            SizedBox(
+                                              width: 5,
+                                            ),
+                                            Text(
+                                              '₹1000',
                                               style: TextStyle(
                                                   fontFamily: 'Nunito',
-                                                  fontWeight: FontWeight.w400),
+                                                  decoration: TextDecoration
+                                                      .lineThrough),
                                             ),
-                                          ),
-                                          SizedBox(
-                                            width: 5,
-                                          ),
-                                          Text(
-                                            '₹1000',
-                                            style: TextStyle(
-                                                fontFamily: 'Nunito',
-                                                decoration:
-                                                    TextDecoration.lineThrough),
-                                          ),
-                                          SizedBox(
-                                            width: 50,
-                                          ),
-                                          Text(
-                                            '₹799',
-                                            style: TextStyle(
-                                                fontSize: 20,
-                                                fontWeight: FontWeight.w600,
-                                                fontFamily: 'Nunito'),
-                                          ),
-                                        ],
-                                      ),
-                                      SizedBox(
-                                        height: 10,
-                                      ), //price
-                                      Row(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
-                                        children: [
-                                          ButtonTheme(
-                                            minWidth: 12,
-                                            height: 30,
-                                            buttonColor: Colors.orange,
-                                            child: RaisedButton(
-                                              onPressed: () {},
-                                              child: Text('Book Now',
-                                                  style: TextStyle(
-                                                      fontFamily: 'Nunito',
-                                                      fontWeight:
-                                                          FontWeight.w600,
-                                                      fontSize: 15,
-                                                      color: Colors.white)),
+                                            SizedBox(
+                                              width: 50,
                                             ),
-                                          ),
-                                        ],
-                                      ), //book now
-                                    ],
+                                            Text(
+                                              '₹799',
+                                              style: TextStyle(
+                                                  fontSize: 20,
+                                                  fontWeight: FontWeight.w600,
+                                                  fontFamily: 'Nunito'),
+                                            ),
+                                          ],
+                                        ),
+                                        SizedBox(
+                                          height: 10,
+                                        ), //price
+                                        Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
+                                          children: [
+                                            ButtonTheme(
+                                              minWidth: 12,
+                                              height: 30,
+                                              buttonColor: Colors.orange,
+                                              child: RaisedButton(
+                                                onPressed: () {
+                                                  Navigator.push(
+                                                      context,
+                                                      MaterialPageRoute(
+                                                          builder: (context) =>
+                                                              WhenLabSelect()));
+                                                },
+                                                child: Text('Book Now',
+                                                    style: TextStyle(
+                                                        fontFamily: 'Nunito',
+                                                        fontWeight:
+                                                            FontWeight.w600,
+                                                        fontSize: 15,
+                                                        color: Colors.white)),
+                                              ),
+                                            ),
+                                          ],
+                                        ), //book now
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ),
@@ -981,197 +1038,225 @@ class Home extends StatelessWidget {
                               ),
                               Padding(
                                 padding: EdgeInsets.all(10),
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                      boxShadow: [
-                                        BoxShadow(
-                                          color: Colors.grey.withOpacity(.4),
-                                          blurRadius: 10,
-                                        )
-                                      ],
-                                      color: Colors.white,
-                                      borderRadius: BorderRadius.all(
-                                          Radius.circular(15))),
-                                  width: 210,
-// color: Colors.greenAccent,
-                                  child: Column(
-                                    children: [
-                                      Row(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.end,
-                                        children: [
-                                          Container(
-                                            decoration: BoxDecoration(
-                                                color: Color.fromRGBO(
-                                                    1, 188, 8, 1),
-                                                borderRadius: BorderRadius.only(
-                                                    topRight:
-                                                        Radius.circular(15))),
-                                            child: Padding(
-                                              padding: EdgeInsets.symmetric(
-                                                  horizontal: 5, vertical: 3),
-                                              child: Row(
-                                                children: [
-                                                  Icon(
-                                                    Icons.done_all,
-                                                    color: Colors.white,
-                                                    size: 15,
-                                                  ),
-                                                  Text(
-                                                    'Trusted',
-                                                    style: TextStyle(
-                                                        fontSize: 10,
-                                                        fontFamily: 'Nunito',
-                                                        color: Colors.white),
-                                                  )
-                                                ],
-                                              ),
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                      SizedBox(
-                                        height: 10,
-                                      ), //Trusted
-                                      Row(
-                                        children: [
-                                          Padding(
-                                            padding: EdgeInsets.only(left: 10),
-                                            child: Text(
-                                              'HbA1c',
-                                              style: TextStyle(
-                                                  fontSize: 16,
-                                                  fontFamily: 'Nunito',
-                                                  fontWeight: FontWeight.w600),
-                                            ),
-                                          ),
-                                        ],
-                                      ), //BasicHealth
-                                      Row(
-                                        children: [
-                                          Padding(
-                                            padding: EdgeInsets.only(left: 10),
-                                            child: Text(
-                                              '12 test included',
-                                              style: TextStyle(
-                                                  fontSize: 13,
-                                                  fontFamily: 'Nunito',
-                                                  fontWeight: FontWeight.w400),
-                                            ),
-                                          ),
-                                        ],
-                                      ), //12 Test Included
-                                      SizedBox(
-                                        height: 12,
-                                      ),
-                                      Row(
-                                        children: [
-                                          Padding(
-                                            padding: EdgeInsets.only(left: 10),
-                                            child: Image.asset(
-                                              'images/one.png',
-                                              width: 100,
-                                            ),
+                                child: InkWell(
+                                  onTap: () {
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) =>
+                                                WhenLabSelect()));
+                                  },
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                        boxShadow: [
+                                          BoxShadow(
+                                            color: Colors.grey.withOpacity(.4),
+                                            blurRadius: 10,
                                           )
                                         ],
-                                      ), //image
-                                      SizedBox(
-                                        height: 20,
-                                      ),
-                                      Row(
-                                        children: [
-                                          Padding(
-                                            padding: EdgeInsets.only(left: 10),
-                                            child: Text(
-                                              'Report within 48 hours',
-                                              style: TextStyle(
-                                                  fontSize: 13,
-                                                  fontFamily: 'Nunito',
-                                                  fontWeight: FontWeight.w400),
-                                            ),
-                                          ),
-                                        ],
-                                      ), //report
-                                      SizedBox(
-                                        height: 10,
-                                      ),
-                                      Row(
-                                        children: [
-                                          Padding(
-                                            padding: EdgeInsets.only(left: 10),
-                                            child: Text(
-                                              'Offer display',
-                                              style: TextStyle(
+                                        color: Colors.white,
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(15))),
+                                    width: 210,
+// color: Colors.greenAccent,
+                                    child: Column(
+                                      children: [
+                                        Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.end,
+                                          children: [
+                                            Container(
+                                              decoration: BoxDecoration(
                                                   color: Color.fromRGBO(
                                                       1, 188, 8, 1),
-                                                  fontSize: 13,
-                                                  fontFamily: 'Nunito',
-                                                  fontWeight: FontWeight.w400),
+                                                  borderRadius:
+                                                      BorderRadius.only(
+                                                          topRight:
+                                                              Radius.circular(
+                                                                  15))),
+                                              child: Padding(
+                                                padding: EdgeInsets.symmetric(
+                                                    horizontal: 5, vertical: 3),
+                                                child: Row(
+                                                  children: [
+                                                    Icon(
+                                                      Icons.done_all,
+                                                      color: Colors.white,
+                                                      size: 15,
+                                                    ),
+                                                    Text(
+                                                      'Trusted',
+                                                      style: TextStyle(
+                                                          fontSize: 10,
+                                                          fontFamily: 'Nunito',
+                                                          color: Colors.white),
+                                                    )
+                                                  ],
+                                                ),
+                                              ),
                                             ),
-                                          ),
-                                        ],
-                                      ),
-                                      SizedBox(
-                                        height: 10,
-                                      ), //OfferDisplay
-                                      Row(
-                                        children: [
-                                          Padding(
-                                            padding: EdgeInsets.only(left: 10),
-                                            child: Text(
-                                              'MRP',
+                                          ],
+                                        ),
+                                        SizedBox(
+                                          height: 10,
+                                        ), //Trusted
+                                        Row(
+                                          children: [
+                                            Padding(
+                                              padding:
+                                                  EdgeInsets.only(left: 10),
+                                              child: Text(
+                                                'HbA1c',
+                                                style: TextStyle(
+                                                    fontSize: 16,
+                                                    fontFamily: 'Nunito',
+                                                    fontWeight:
+                                                        FontWeight.w600),
+                                              ),
+                                            ),
+                                          ],
+                                        ), //BasicHealth
+                                        Row(
+                                          children: [
+                                            Padding(
+                                              padding:
+                                                  EdgeInsets.only(left: 10),
+                                              child: Text(
+                                                '12 test included',
+                                                style: TextStyle(
+                                                    fontSize: 13,
+                                                    fontFamily: 'Nunito',
+                                                    fontWeight:
+                                                        FontWeight.w400),
+                                              ),
+                                            ),
+                                          ],
+                                        ), //12 Test Included
+                                        SizedBox(
+                                          height: 12,
+                                        ),
+                                        Row(
+                                          children: [
+                                            Padding(
+                                              padding:
+                                                  EdgeInsets.only(left: 10),
+                                              child: Image.asset(
+                                                'images/one.png',
+                                                width: 100,
+                                              ),
+                                            )
+                                          ],
+                                        ), //image
+                                        SizedBox(
+                                          height: 20,
+                                        ),
+                                        Row(
+                                          children: [
+                                            Padding(
+                                              padding:
+                                                  EdgeInsets.only(left: 10),
+                                              child: Text(
+                                                'Report within 48 hours',
+                                                style: TextStyle(
+                                                    fontSize: 13,
+                                                    fontFamily: 'Nunito',
+                                                    fontWeight:
+                                                        FontWeight.w400),
+                                              ),
+                                            ),
+                                          ],
+                                        ), //report
+                                        SizedBox(
+                                          height: 10,
+                                        ),
+                                        Row(
+                                          children: [
+                                            Padding(
+                                              padding:
+                                                  EdgeInsets.only(left: 10),
+                                              child: Text(
+                                                'Offer display',
+                                                style: TextStyle(
+                                                    color: Color.fromRGBO(
+                                                        1, 188, 8, 1),
+                                                    fontSize: 13,
+                                                    fontFamily: 'Nunito',
+                                                    fontWeight:
+                                                        FontWeight.w400),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                        SizedBox(
+                                          height: 10,
+                                        ), //OfferDisplay
+                                        Row(
+                                          children: [
+                                            Padding(
+                                              padding:
+                                                  EdgeInsets.only(left: 10),
+                                              child: Text(
+                                                'MRP',
+                                                style: TextStyle(
+                                                    fontFamily: 'Nunito',
+                                                    fontWeight:
+                                                        FontWeight.w400),
+                                              ),
+                                            ),
+                                            SizedBox(
+                                              width: 5,
+                                            ),
+                                            Text(
+                                              '₹1000',
                                               style: TextStyle(
                                                   fontFamily: 'Nunito',
-                                                  fontWeight: FontWeight.w400),
+                                                  decoration: TextDecoration
+                                                      .lineThrough),
                                             ),
-                                          ),
-                                          SizedBox(
-                                            width: 5,
-                                          ),
-                                          Text(
-                                            '₹1000',
-                                            style: TextStyle(
-                                                fontFamily: 'Nunito',
-                                                decoration:
-                                                    TextDecoration.lineThrough),
-                                          ),
-                                          SizedBox(
-                                            width: 50,
-                                          ),
-                                          Text(
-                                            '₹799',
-                                            style: TextStyle(
-                                                fontSize: 20,
-                                                fontWeight: FontWeight.w600,
-                                                fontFamily: 'Nunito'),
-                                          ),
-                                        ],
-                                      ),
-                                      SizedBox(
-                                        height: 10,
-                                      ), //price
-                                      Row(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
-                                        children: [
-                                          ButtonTheme(
-                                            minWidth: 12,
-                                            height: 30,
-                                            buttonColor: Colors.orange,
-                                            child: RaisedButton(
-                                              onPressed: () {},
-                                              child: Text('Book Now',
-                                                  style: TextStyle(
-                                                      fontFamily: 'Nunito',
-                                                      fontWeight:
-                                                          FontWeight.w600,
-                                                      fontSize: 15,
-                                                      color: Colors.white)),
+                                            SizedBox(
+                                              width: 50,
                                             ),
-                                          ),
-                                        ],
-                                      ), //book now
-                                    ],
+                                            Text(
+                                              '₹799',
+                                              style: TextStyle(
+                                                  fontSize: 20,
+                                                  fontWeight: FontWeight.w600,
+                                                  fontFamily: 'Nunito'),
+                                            ),
+                                          ],
+                                        ),
+                                        SizedBox(
+                                          height: 10,
+                                        ), //price
+                                        Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
+                                          children: [
+                                            ButtonTheme(
+                                              minWidth: 12,
+                                              height: 30,
+                                              buttonColor: Colors.orange,
+                                              child: RaisedButton(
+                                                onPressed: () {
+                                                  Navigator.push(
+                                                      context,
+                                                      MaterialPageRoute(
+                                                          builder: (context) =>
+                                                              WhenLabSelect()));
+                                                },
+                                                child: Text('Book Now',
+                                                    style: TextStyle(
+                                                        fontFamily: 'Nunito',
+                                                        fontWeight:
+                                                            FontWeight.w600,
+                                                        fontSize: 15,
+                                                        color: Colors.white)),
+                                              ),
+                                            ),
+                                          ],
+                                        ), //book now
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ),
@@ -1180,197 +1265,225 @@ class Home extends StatelessWidget {
                               ),
                               Padding(
                                 padding: EdgeInsets.all(10),
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                      boxShadow: [
-                                        BoxShadow(
-                                          color: Colors.grey.withOpacity(.4),
-                                          blurRadius: 10,
-                                        )
-                                      ],
-                                      color: Colors.white,
-                                      borderRadius: BorderRadius.all(
-                                          Radius.circular(15))),
-                                  width: 210,
-// color: Colors.greenAccent,
-                                  child: Column(
-                                    children: [
-                                      Row(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.end,
-                                        children: [
-                                          Container(
-                                            decoration: BoxDecoration(
-                                                color: Color.fromRGBO(
-                                                    1, 188, 8, 1),
-                                                borderRadius: BorderRadius.only(
-                                                    topRight:
-                                                        Radius.circular(15))),
-                                            child: Padding(
-                                              padding: EdgeInsets.symmetric(
-                                                  horizontal: 5, vertical: 3),
-                                              child: Row(
-                                                children: [
-                                                  Icon(
-                                                    Icons.done_all,
-                                                    color: Colors.white,
-                                                    size: 15,
-                                                  ),
-                                                  Text(
-                                                    'Trusted',
-                                                    style: TextStyle(
-                                                        fontSize: 10,
-                                                        fontFamily: 'Nunito',
-                                                        color: Colors.white),
-                                                  )
-                                                ],
-                                              ),
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                      SizedBox(
-                                        height: 10,
-                                      ), //Trusted
-                                      Row(
-                                        children: [
-                                          Padding(
-                                            padding: EdgeInsets.only(left: 10),
-                                            child: Text(
-                                              'HbA1c',
-                                              style: TextStyle(
-                                                  fontSize: 16,
-                                                  fontFamily: 'Nunito',
-                                                  fontWeight: FontWeight.w600),
-                                            ),
-                                          ),
-                                        ],
-                                      ), //BasicHealth
-                                      Row(
-                                        children: [
-                                          Padding(
-                                            padding: EdgeInsets.only(left: 10),
-                                            child: Text(
-                                              '12 test included',
-                                              style: TextStyle(
-                                                  fontSize: 13,
-                                                  fontFamily: 'Nunito',
-                                                  fontWeight: FontWeight.w400),
-                                            ),
-                                          ),
-                                        ],
-                                      ), //12 Test Included
-                                      SizedBox(
-                                        height: 12,
-                                      ),
-                                      Row(
-                                        children: [
-                                          Padding(
-                                            padding: EdgeInsets.only(left: 10),
-                                            child: Image.asset(
-                                              'images/one.png',
-                                              width: 100,
-                                            ),
+                                child: InkWell(
+                                  onTap: () {
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) =>
+                                                WhenLabSelect()));
+                                  },
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                        boxShadow: [
+                                          BoxShadow(
+                                            color: Colors.grey.withOpacity(.4),
+                                            blurRadius: 10,
                                           )
                                         ],
-                                      ), //image
-                                      SizedBox(
-                                        height: 20,
-                                      ),
-                                      Row(
-                                        children: [
-                                          Padding(
-                                            padding: EdgeInsets.only(left: 10),
-                                            child: Text(
-                                              'Report within 48 hours',
-                                              style: TextStyle(
-                                                  fontSize: 13,
-                                                  fontFamily: 'Nunito',
-                                                  fontWeight: FontWeight.w400),
-                                            ),
-                                          ),
-                                        ],
-                                      ), //report
-                                      SizedBox(
-                                        height: 10,
-                                      ),
-                                      Row(
-                                        children: [
-                                          Padding(
-                                            padding: EdgeInsets.only(left: 10),
-                                            child: Text(
-                                              'Offer display',
-                                              style: TextStyle(
+                                        color: Colors.white,
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(15))),
+                                    width: 210,
+// color: Colors.greenAccent,
+                                    child: Column(
+                                      children: [
+                                        Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.end,
+                                          children: [
+                                            Container(
+                                              decoration: BoxDecoration(
                                                   color: Color.fromRGBO(
                                                       1, 188, 8, 1),
-                                                  fontSize: 13,
-                                                  fontFamily: 'Nunito',
-                                                  fontWeight: FontWeight.w400),
+                                                  borderRadius:
+                                                      BorderRadius.only(
+                                                          topRight:
+                                                              Radius.circular(
+                                                                  15))),
+                                              child: Padding(
+                                                padding: EdgeInsets.symmetric(
+                                                    horizontal: 5, vertical: 3),
+                                                child: Row(
+                                                  children: [
+                                                    Icon(
+                                                      Icons.done_all,
+                                                      color: Colors.white,
+                                                      size: 15,
+                                                    ),
+                                                    Text(
+                                                      'Trusted',
+                                                      style: TextStyle(
+                                                          fontSize: 10,
+                                                          fontFamily: 'Nunito',
+                                                          color: Colors.white),
+                                                    )
+                                                  ],
+                                                ),
+                                              ),
                                             ),
-                                          ),
-                                        ],
-                                      ),
-                                      SizedBox(
-                                        height: 10,
-                                      ), //OfferDisplay
-                                      Row(
-                                        children: [
-                                          Padding(
-                                            padding: EdgeInsets.only(left: 10),
-                                            child: Text(
-                                              'MRP',
+                                          ],
+                                        ),
+                                        SizedBox(
+                                          height: 10,
+                                        ), //Trusted
+                                        Row(
+                                          children: [
+                                            Padding(
+                                              padding:
+                                                  EdgeInsets.only(left: 10),
+                                              child: Text(
+                                                'HbA1c',
+                                                style: TextStyle(
+                                                    fontSize: 16,
+                                                    fontFamily: 'Nunito',
+                                                    fontWeight:
+                                                        FontWeight.w600),
+                                              ),
+                                            ),
+                                          ],
+                                        ), //BasicHealth
+                                        Row(
+                                          children: [
+                                            Padding(
+                                              padding:
+                                                  EdgeInsets.only(left: 10),
+                                              child: Text(
+                                                '12 test included',
+                                                style: TextStyle(
+                                                    fontSize: 13,
+                                                    fontFamily: 'Nunito',
+                                                    fontWeight:
+                                                        FontWeight.w400),
+                                              ),
+                                            ),
+                                          ],
+                                        ), //12 Test Included
+                                        SizedBox(
+                                          height: 12,
+                                        ),
+                                        Row(
+                                          children: [
+                                            Padding(
+                                              padding:
+                                                  EdgeInsets.only(left: 10),
+                                              child: Image.asset(
+                                                'images/one.png',
+                                                width: 100,
+                                              ),
+                                            )
+                                          ],
+                                        ), //image
+                                        SizedBox(
+                                          height: 20,
+                                        ),
+                                        Row(
+                                          children: [
+                                            Padding(
+                                              padding:
+                                                  EdgeInsets.only(left: 10),
+                                              child: Text(
+                                                'Report within 48 hours',
+                                                style: TextStyle(
+                                                    fontSize: 13,
+                                                    fontFamily: 'Nunito',
+                                                    fontWeight:
+                                                        FontWeight.w400),
+                                              ),
+                                            ),
+                                          ],
+                                        ), //report
+                                        SizedBox(
+                                          height: 10,
+                                        ),
+                                        Row(
+                                          children: [
+                                            Padding(
+                                              padding:
+                                                  EdgeInsets.only(left: 10),
+                                              child: Text(
+                                                'Offer display',
+                                                style: TextStyle(
+                                                    color: Color.fromRGBO(
+                                                        1, 188, 8, 1),
+                                                    fontSize: 13,
+                                                    fontFamily: 'Nunito',
+                                                    fontWeight:
+                                                        FontWeight.w400),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                        SizedBox(
+                                          height: 10,
+                                        ), //OfferDisplay
+                                        Row(
+                                          children: [
+                                            Padding(
+                                              padding:
+                                                  EdgeInsets.only(left: 10),
+                                              child: Text(
+                                                'MRP',
+                                                style: TextStyle(
+                                                    fontFamily: 'Nunito',
+                                                    fontWeight:
+                                                        FontWeight.w400),
+                                              ),
+                                            ),
+                                            SizedBox(
+                                              width: 5,
+                                            ),
+                                            Text(
+                                              '₹1000',
                                               style: TextStyle(
                                                   fontFamily: 'Nunito',
-                                                  fontWeight: FontWeight.w400),
+                                                  decoration: TextDecoration
+                                                      .lineThrough),
                                             ),
-                                          ),
-                                          SizedBox(
-                                            width: 5,
-                                          ),
-                                          Text(
-                                            '₹1000',
-                                            style: TextStyle(
-                                                fontFamily: 'Nunito',
-                                                decoration:
-                                                    TextDecoration.lineThrough),
-                                          ),
-                                          SizedBox(
-                                            width: 50,
-                                          ),
-                                          Text(
-                                            '₹799',
-                                            style: TextStyle(
-                                                fontSize: 20,
-                                                fontWeight: FontWeight.w600,
-                                                fontFamily: 'Nunito'),
-                                          ),
-                                        ],
-                                      ),
-                                      SizedBox(
-                                        height: 10,
-                                      ), //price
-                                      Row(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
-                                        children: [
-                                          ButtonTheme(
-                                            minWidth: 12,
-                                            height: 30,
-                                            buttonColor: Colors.orange,
-                                            child: RaisedButton(
-                                              onPressed: () {},
-                                              child: Text('Book Now',
-                                                  style: TextStyle(
-                                                      fontFamily: 'Nunito',
-                                                      fontWeight:
-                                                          FontWeight.w600,
-                                                      fontSize: 15,
-                                                      color: Colors.white)),
+                                            SizedBox(
+                                              width: 50,
                                             ),
-                                          ),
-                                        ],
-                                      ), //book now
-                                    ],
+                                            Text(
+                                              '₹799',
+                                              style: TextStyle(
+                                                  fontSize: 20,
+                                                  fontWeight: FontWeight.w600,
+                                                  fontFamily: 'Nunito'),
+                                            ),
+                                          ],
+                                        ),
+                                        SizedBox(
+                                          height: 10,
+                                        ), //price
+                                        Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
+                                          children: [
+                                            ButtonTheme(
+                                              minWidth: 12,
+                                              height: 30,
+                                              buttonColor: Colors.orange,
+                                              child: RaisedButton(
+                                                onPressed: () {
+                                                  Navigator.push(
+                                                      context,
+                                                      MaterialPageRoute(
+                                                          builder: (context) =>
+                                                              WhenLabSelect()));
+                                                },
+                                                child: Text('Book Now',
+                                                    style: TextStyle(
+                                                        fontFamily: 'Nunito',
+                                                        fontWeight:
+                                                            FontWeight.w600,
+                                                        fontSize: 15,
+                                                        color: Colors.white)),
+                                              ),
+                                            ),
+                                          ],
+                                        ), //book now
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ),
