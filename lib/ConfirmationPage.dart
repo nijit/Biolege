@@ -21,7 +21,10 @@ class ConfirmationPage extends StatelessWidget {
                   children: [
                     Text(
                       'Sample pickup address',
-                      style: TextStyle(color: Colors.white),
+                      style: TextStyle(
+                          fontFamily: 'Nunito',
+                          fontSize: 17,
+                          color: Colors.white),
                     )
                   ],
                 ), //sample,
@@ -46,7 +49,10 @@ class ConfirmationPage extends StatelessWidget {
                       children: [
                         Text(
                           'Agnideep Sengupta\nKedia Puram, VIP Colony, Hojai, Assam - 782435\nContact : 8876967257',
-                          style: TextStyle(color: Colors.white, fontSize: 13),
+                          style: TextStyle(
+                              fontFamily: 'Nunito',
+                              color: Colors.white,
+                              fontSize: 12),
                         )
                       ],
                     ),
@@ -65,7 +71,7 @@ class ConfirmationPage extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 20,
+            height: 30,
           ),
           Container(
             margin: EdgeInsets.only(left: 10, right: 10),
@@ -74,7 +80,13 @@ class ConfirmationPage extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    Text('Sample pickup date'),
+                    Text(
+                      'Sample pickup date',
+                      style: TextStyle(
+                          fontFamily: 'Nunito',
+                          fontSize: 15,
+                          fontWeight: FontWeight.w600),
+                    ),
                   ],
                 ),
                 SizedBox(
@@ -84,13 +96,18 @@ class ConfirmationPage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Icon(Icons.calendar_today),
-                    Text('Tomorrow, 08 April 2020'),
+                    Text(
+                      '  Tomorrow, 08 April 2020',
+                      style: TextStyle(fontFamily: 'Nunito', fontSize: 15),
+                    ),
                     SizedBox(
-                      width: 5,
+                      width: 10,
                     ),
                     Text(
                       'Change',
                       style: TextStyle(
+                          fontFamily: 'Nunito',
+                          fontSize: 13,
                           decoration: TextDecoration.underline,
                           color: Color(0xff063BF8)),
                     )
@@ -100,7 +117,7 @@ class ConfirmationPage extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 20,
+            height: 30,
           ),
           Container(
             margin: EdgeInsets.only(left: 10, right: 10),
@@ -109,7 +126,13 @@ class ConfirmationPage extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    Text('Sample pickup time'),
+                    Text(
+                      'Sample pickup time',
+                      style: TextStyle(
+                          fontFamily: 'Nunito',
+                          fontSize: 15,
+                          fontWeight: FontWeight.w600),
+                    ),
                   ],
                 ),
                 SizedBox(
@@ -119,13 +142,18 @@ class ConfirmationPage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Icon(Icons.access_time),
-                    Text('Morning, 08:00 am'),
+                    Text(
+                      '  Morning, 08:00 am',
+                      style: TextStyle(fontFamily: 'Nunito', fontSize: 15),
+                    ),
                     SizedBox(
-                      width: 5,
+                      width: 10,
                     ),
                     Text(
                       'Change',
                       style: TextStyle(
+                          fontFamily: 'Nunito',
+                          fontSize: 13,
                           decoration: TextDecoration.underline,
                           color: Color(0xff063BF8)),
                     )
@@ -149,7 +177,15 @@ class ConfirmationPage extends StatelessWidget {
               children: [
                 Row(
                   mainAxisAlignment: MainAxisAlignment.start,
-                  children: [Text('Patient details')],
+                  children: [
+                    Text(
+                      'Patient details',
+                      style: TextStyle(
+                          fontFamily: 'Nunito',
+                          fontSize: 15,
+                          fontWeight: FontWeight.w600),
+                    )
+                  ],
                 ),
                 SizedBox(
                   height: 20,
@@ -159,13 +195,48 @@ class ConfirmationPage extends StatelessWidget {
                   children: [
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [Text('Name'), Text('Agnideep Sengupta')],
+                      children: [
+                        Text(
+                          'Name',
+                          style: TextStyle(
+                              fontFamily: 'Nunito',
+                              fontSize: 12,
+                              color: Color(0xff808080)),
+                        ),
+                        Text('Agnideep Sengupta',
+                            style: TextStyle(
+                              fontFamily: 'Nunito',
+                              fontSize: 14,
+                            ))
+                      ],
                     ),
                     Column(
-                      children: [Text('Gender'), Text('Male')],
+                      children: [
+                        Text('Gender',
+                            style: TextStyle(
+                                fontFamily: 'Nunito',
+                                fontSize: 12,
+                                color: Color(0xff808080))),
+                        Text('Male',
+                            style: TextStyle(
+                              fontFamily: 'Nunito',
+                              fontSize: 14,
+                            ))
+                      ],
                     ),
                     Column(
-                      children: [Text('Age'), Text('22')],
+                      children: [
+                        Text('Age',
+                            style: TextStyle(
+                                fontFamily: 'Nunito',
+                                fontSize: 12,
+                                color: Color(0xff808080))),
+                        Text('22',
+                            style: TextStyle(
+                              fontFamily: 'Nunito',
+                              fontSize: 14,
+                            ))
+                      ],
                     ),
                   ],
                 )
@@ -179,7 +250,7 @@ class ConfirmationPage extends StatelessWidget {
             thickness: 1,
           ),
           SizedBox(
-            height: 10,
+            height: 20,
           ),
           Container(
             margin: EdgeInsets.only(left: 10, right: 10),
@@ -188,13 +259,22 @@ class ConfirmationPage extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text('Test Selected'),
+                    Text(
+                      'Test Selected',
+                      style: TextStyle(
+                          fontFamily: 'Nunito',
+                          fontSize: 15,
+                          fontWeight: FontWeight.w600),
+                    ),
                     Container(
-                      padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+                      padding: EdgeInsets.symmetric(horizontal: 7, vertical: 5),
                       decoration: BoxDecoration(
                           color: Color.fromRGBO(196, 196, 196, 0.5),
                           borderRadius: BorderRadius.all(Radius.circular(13))),
-                      child: Text('4 tests selected'),
+                      child: Text(
+                        '4 tests selected',
+                        style: TextStyle(fontFamily: 'Nunito', fontSize: 12),
+                      ),
                     )
                   ],
                 ),
@@ -203,28 +283,64 @@ class ConfirmationPage extends StatelessWidget {
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [Text('Thyroid profile'), Text('₹500')],
+                  children: [
+                    Text(
+                      'Thyroid profile',
+                      style: TextStyle(fontFamily: 'Nunito', fontSize: 13),
+                    ),
+                    Text(
+                      '₹500',
+                      style: TextStyle(fontFamily: 'Nunito', fontSize: 13.5),
+                    )
+                  ],
                 ),
                 SizedBox(
                   height: 10,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [Text('PPBS'), Text('₹500')],
+                  children: [
+                    Text(
+                      'PPBS',
+                      style: TextStyle(fontFamily: 'Nunito', fontSize: 13),
+                    ),
+                    Text(
+                      '₹500',
+                      style: TextStyle(fontFamily: 'Nunito', fontSize: 13.5),
+                    )
+                  ],
                 ),
                 SizedBox(
                   height: 10,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [Text('Hb1Ac'), Text('₹100')],
+                  children: [
+                    Text(
+                      'Hb1Ac',
+                      style: TextStyle(fontFamily: 'Nunito', fontSize: 13),
+                    ),
+                    Text(
+                      '₹100',
+                      style: TextStyle(fontFamily: 'Nunito', fontSize: 13.5),
+                    )
+                  ],
                 ),
                 SizedBox(
                   height: 15,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [Text('Total'), Text('₹1000')],
+                  children: [
+                    Text(
+                      'Total',
+                      style: TextStyle(fontFamily: 'Nunito', fontSize: 14),
+                    ),
+                    Text(
+                      '₹1100',
+                      style: TextStyle(fontFamily: 'Nunito', fontSize: 14),
+                    )
+                  ],
                 ),
                 SizedBox(
                   height: 10,
@@ -239,7 +355,7 @@ class ConfirmationPage extends StatelessWidget {
             thickness: 1,
           ),
           SizedBox(
-            height: 10,
+            height: 20,
           ),
           Container(
             margin: EdgeInsets.only(left: 10, right: 10),
@@ -248,7 +364,13 @@ class ConfirmationPage extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text('Laboratory details'),
+                    Text(
+                      'Laboratory details',
+                      style: TextStyle(
+                          fontFamily: 'Nunito',
+                          fontSize: 15,
+                          fontWeight: FontWeight.w600),
+                    ),
                   ],
                 ),
                 SizedBox(
@@ -259,7 +381,16 @@ class ConfirmationPage extends StatelessWidget {
                   children: [
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [Text('Lab'), Text('Thyrocare')],
+                      children: [
+                        Text(
+                          'Lab',
+                          style: TextStyle(fontFamily: 'Nunito', fontSize: 13),
+                        ),
+                        Text(
+                          'Thyrocare',
+                          style: TextStyle(fontFamily: 'Nunito', fontSize: 14),
+                        )
+                      ],
                     ),
                     Image.asset(
                       'images/Thyrocare.png',
@@ -275,7 +406,16 @@ class ConfirmationPage extends StatelessWidget {
                   children: [
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [Text('Preparation'), Text('Fasting required')],
+                      children: [
+                        Text(
+                          'Preparation',
+                          style: TextStyle(fontFamily: 'Nunito', fontSize: 13),
+                        ),
+                        Text(
+                          'Fasting required',
+                          style: TextStyle(fontFamily: 'Nunito', fontSize: 14),
+                        )
+                      ],
                     ),
                   ],
                 ),
@@ -287,13 +427,28 @@ class ConfirmationPage extends StatelessWidget {
                   children: [
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [Text('Sample'), Text('Blood')],
+                      children: [
+                        Text(
+                          'Sample',
+                          style: TextStyle(fontFamily: 'Nunito', fontSize: 13),
+                        ),
+                        Text(
+                          'Blood',
+                          style: TextStyle(fontFamily: 'Nunito', fontSize: 14),
+                        )
+                      ],
                     ),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text('Expected report delivery'),
-                        Text('27 July')
+                        Text(
+                          'Expected report delivery',
+                          style: TextStyle(fontFamily: 'Nunito', fontSize: 13),
+                        ),
+                        Text(
+                          '27 July',
+                          style: TextStyle(fontFamily: 'Nunito', fontSize: 14),
+                        )
                       ],
                     ),
                   ],
@@ -308,7 +463,7 @@ class ConfirmationPage extends StatelessWidget {
             thickness: 1,
           ),
           SizedBox(
-            height: 10,
+            height: 20,
           ),
           Container(
             margin: EdgeInsets.only(left: 10, right: 10),
@@ -317,7 +472,13 @@ class ConfirmationPage extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text('Pricing'),
+                    Text(
+                      'Pricing',
+                      style: TextStyle(
+                          fontFamily: 'Nunito',
+                          fontSize: 15,
+                          fontWeight: FontWeight.w600),
+                    ),
                   ],
                 ),
                 SizedBox(
@@ -325,21 +486,48 @@ class ConfirmationPage extends StatelessWidget {
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [Text('Test Price'), Text('₹500')],
+                  children: [
+                    Text(
+                      'Test Price',
+                      style: TextStyle(fontFamily: 'Nunito', fontSize: 12),
+                    ),
+                    Text(
+                      '₹500',
+                      style: TextStyle(fontFamily: 'Nunito', fontSize: 12),
+                    )
+                  ],
                 ),
                 SizedBox(
                   height: 10,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [Text('Delivery charge'), Text('₹500')],
+                  children: [
+                    Text(
+                      'Delivery charge',
+                      style: TextStyle(fontFamily: 'Nunito', fontSize: 12),
+                    ),
+                    Text(
+                      '₹500',
+                      style: TextStyle(fontFamily: 'Nunito', fontSize: 12),
+                    )
+                  ],
                 ),
                 SizedBox(
                   height: 10,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [Text('Membership discount'), Text('₹00')],
+                  children: [
+                    Text(
+                      'Membership discount',
+                      style: TextStyle(fontFamily: 'Nunito', fontSize: 12),
+                    ),
+                    Text(
+                      '₹00',
+                      style: TextStyle(fontFamily: 'Nunito', fontSize: 12),
+                    )
+                  ],
                 ),
                 SizedBox(
                   height: 10,
@@ -349,7 +537,10 @@ class ConfirmationPage extends StatelessWidget {
                   children: [
                     Text(
                       'Not a member? Get prime',
-                      style: TextStyle(color: Color(0xffFF8900)),
+                      style: TextStyle(
+                          color: Color(0xffFF8900),
+                          fontFamily: 'Nunito',
+                          fontSize: 12),
                     )
                   ],
                 ),
@@ -358,10 +549,19 @@ class ConfirmationPage extends StatelessWidget {
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [Text('Grand Total'), Text('₹1000')],
+                  children: [
+                    Text(
+                      'Grand Total',
+                      style: TextStyle(fontFamily: 'Nunito', fontSize: 14),
+                    ),
+                    Text(
+                      '₹1000',
+                      style: TextStyle(fontFamily: 'Nunito', fontSize: 14),
+                    )
+                  ],
                 ),
                 SizedBox(
-                  height: 15,
+                  height: 20,
                 ),
               ],
             ),
@@ -387,12 +587,26 @@ class ConfirmationPage extends StatelessWidget {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text('Payment method'),
-                          Text('Choose option')
+                          Text(
+                            'Payment method',
+                            style:
+                                TextStyle(fontFamily: 'Nunito', fontSize: 15),
+                          ),
+                          Text(
+                            'Choose option',
+                            style:
+                                TextStyle(fontFamily: 'Nunito', fontSize: 13),
+                          )
                         ],
                       ), //payment Method
                       Column(
-                        children: [Icon(Icons.arrow_forward_ios)],
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          Icon(
+                            Icons.arrow_forward_ios,
+                            size: 15,
+                          )
+                        ],
                       ), //arrow
                       Column(
                         children: [
@@ -420,11 +634,17 @@ class ConfirmationPage extends StatelessWidget {
                                     children: [
                                       Text(
                                         'Total',
-                                        style: TextStyle(color: Colors.white),
+                                        style: TextStyle(
+                                            fontFamily: 'Nunito',
+                                            fontSize: 12,
+                                            color: Colors.white),
                                       ),
                                       Text(
                                         '₹1000',
-                                        style: TextStyle(color: Colors.white),
+                                        style: TextStyle(
+                                            fontFamily: 'Nunito',
+                                            fontSize: 13,
+                                            color: Colors.white),
                                       )
                                     ],
                                   ),
@@ -437,12 +657,15 @@ class ConfirmationPage extends StatelessWidget {
                                         children: [
                                           Text(
                                             'Proceed',
-                                            style:
-                                                TextStyle(color: Colors.white),
+                                            style: TextStyle(
+                                                color: Colors.white,
+                                                fontFamily: 'Nunito',
+                                                fontSize: 15),
                                           ),
                                           Icon(
                                             Icons.play_circle_outline,
                                             color: Colors.white,
+                                            size: 20,
                                           )
                                         ],
                                       )

@@ -58,14 +58,17 @@ class WhenLabSelect extends StatelessWidget {
                               builder: (context) => ConfirmationPage()));
                     },
                     child: Container(
-                      padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+                      padding: EdgeInsets.symmetric(horizontal: 8, vertical: 5),
                       decoration: BoxDecoration(
                         color: Color(0xffFF8900),
                         borderRadius: BorderRadius.all(Radius.circular(5)),
                       ),
                       child: Text(
                         'Add to cart',
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(
+                            fontFamily: 'Nunito',
+                            fontSize: 15,
+                            color: Colors.white),
                       ),
                     ),
                   )
@@ -95,8 +98,18 @@ class WhenLabSelect extends StatelessWidget {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text('Select laboratory'),
-                              Text(r'$ 400')
+                              Text(
+                                'Select laboratory',
+                                style: TextStyle(
+                                    fontFamily: 'Nunito',
+                                    fontSize: 13,
+                                    color: Color(0xff808080)),
+                              ),
+                              Text(
+                                r'$ 400',
+                                style: TextStyle(
+                                    fontFamily: 'Nunito', fontSize: 15),
+                              )
                             ],
                           ), //trusted
                           SizedBox(
@@ -105,7 +118,11 @@ class WhenLabSelect extends StatelessWidget {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text('Dr Lal Pathlabs'),
+                              Text(
+                                'Dr Lal Pathlabs',
+                                style: TextStyle(
+                                    fontFamily: 'Nunito', fontSize: 15),
+                              ),
                               Container(
                                 decoration: BoxDecoration(
                                   color: Color.fromRGBO(1, 188, 8, 1),
@@ -143,7 +160,11 @@ class WhenLabSelect extends StatelessWidget {
                                 'images/one.png',
                                 height: 30,
                               ),
-                              Text('NABL, CAP, ISO') //Trusted
+                              Text(
+                                'NABL, CAP, ISO',
+                                style: TextStyle(
+                                    fontFamily: 'Nunito', fontSize: 13),
+                              ) //Trusted
                             ],
                           ), //NABL, CAP, ISO
                           Row(
@@ -207,13 +228,33 @@ class WhenLabSelect extends StatelessWidget {
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text('Total tests'),
-                              Text('3'),
+                              Text(
+                                'Total tests',
+                                style: TextStyle(
+                                    color: Color(0xff808080),
+                                    fontFamily: 'Nunito',
+                                    fontSize: 13),
+                              ),
+                              Text(
+                                '3',
+                                style: TextStyle(
+                                    fontFamily: 'Nunito', fontSize: 13),
+                              ),
                               SizedBox(
                                 height: 10,
                               ),
-                              Text('Test preparation'),
-                              Text('No preparation required '),
+                              Text(
+                                'Test preparation',
+                                style: TextStyle(
+                                    color: Color(0xff808080),
+                                    fontFamily: 'Nunito',
+                                    fontSize: 13),
+                              ),
+                              Text(
+                                'No preparation required ',
+                                style: TextStyle(
+                                    fontFamily: 'Nunito', fontSize: 13),
+                              ),
                             ],
                           ),
                           Container(
@@ -224,13 +265,33 @@ class WhenLabSelect extends StatelessWidget {
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text('Sample type'),
-                              Text('Blood'),
+                              Text(
+                                'Sample type',
+                                style: TextStyle(
+                                    color: Color(0xff808080),
+                                    fontFamily: 'Nunito',
+                                    fontSize: 13),
+                              ),
+                              Text(
+                                'Blood',
+                                style: TextStyle(
+                                    fontFamily: 'Nunito', fontSize: 13),
+                              ),
                               SizedBox(
                                 height: 10,
                               ),
-                              Text('Report delivery'),
-                              Text('Within 24 hrs - 48 hrs'),
+                              Text(
+                                'Report delivery',
+                                style: TextStyle(
+                                    color: Color(0xff808080),
+                                    fontFamily: 'Nunito',
+                                    fontSize: 13),
+                              ),
+                              Text(
+                                'Within 24 hrs - 48 hrs',
+                                style: TextStyle(
+                                    fontFamily: 'Nunito', fontSize: 13),
+                              ),
                             ],
                           )
                         ],
@@ -238,7 +299,7 @@ class WhenLabSelect extends StatelessWidget {
                     ),
                   ),
                 ),
-              ),
+              ), //2ndcard
               SizedBox(
                 height: 15,
               ),
@@ -262,14 +323,31 @@ class WhenLabSelect extends StatelessWidget {
                         children: [
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [Text('Test included'), Text('30 tests')],
+                            children: [
+                              Text(
+                                'Test included',
+                                style: TextStyle(
+                                    fontFamily: 'Nunito', fontSize: 15),
+                              ),
+                              Text(
+                                '30 tests',
+                                style: TextStyle(
+                                    color: Color(0xff808080),
+                                    fontFamily: 'Nunito',
+                                    fontSize: 15),
+                              )
+                            ],
                           ), //Test Included,
                           SizedBox(
-                            height: 10,
+                            height: 20,
                           ),
                           Row(
                             children: [
-                              Text('Kidney Profile'),
+                              Text(
+                                'Kidney Profile',
+                                style: TextStyle(
+                                    fontFamily: 'Nunito', fontSize: 13),
+                              ),
                               SizedBox(
                                 width: 10,
                               ),
@@ -278,7 +356,7 @@ class WhenLabSelect extends StatelessWidget {
                                 height: 15,
                                 child: Icon(
                                   Icons.arrow_forward_ios,
-                                  size: 10,
+                                  size: 9,
                                   color: Color.fromRGBO(0, 0, 0, 0.54),
                                 ),
                                 decoration: BoxDecoration(
@@ -292,7 +370,11 @@ class WhenLabSelect extends StatelessWidget {
                           ),
                           Row(
                             children: [
-                              Text('Lipid Profile'),
+                              Text(
+                                'Lipid Profile',
+                                style: TextStyle(
+                                    fontFamily: 'Nunito', fontSize: 13),
+                              ),
                               SizedBox(
                                 width: 10,
                               ),
@@ -301,7 +383,7 @@ class WhenLabSelect extends StatelessWidget {
                                 height: 15,
                                 child: Icon(
                                   Icons.arrow_forward_ios,
-                                  size: 10,
+                                  size: 9,
                                   color: Color.fromRGBO(0, 0, 0, 0.54),
                                 ),
                                 decoration: BoxDecoration(
@@ -315,7 +397,11 @@ class WhenLabSelect extends StatelessWidget {
                           ),
                           Row(
                             children: [
-                              Text('Liver Profile'),
+                              Text(
+                                'Liver Profile',
+                                style: TextStyle(
+                                    fontFamily: 'Nunito', fontSize: 13),
+                              ),
                               SizedBox(
                                 width: 10,
                               ),
@@ -324,7 +410,7 @@ class WhenLabSelect extends StatelessWidget {
                                 height: 15,
                                 child: Icon(
                                   Icons.arrow_forward_ios,
-                                  size: 10,
+                                  size: 9,
                                   color: Color.fromRGBO(0, 0, 0, 0.54),
                                 ),
                                 decoration: BoxDecoration(
@@ -338,7 +424,11 @@ class WhenLabSelect extends StatelessWidget {
                           ),
                           Row(
                             children: [
-                              Text('Thyroid Profile'),
+                              Text(
+                                'Thyroid Profile',
+                                style: TextStyle(
+                                    fontFamily: 'Nunito', fontSize: 13),
+                              ),
                               SizedBox(
                                 width: 10,
                               ),
@@ -347,7 +437,7 @@ class WhenLabSelect extends StatelessWidget {
                                 height: 15,
                                 child: Icon(
                                   Icons.arrow_forward_ios,
-                                  size: 10,
+                                  size: 9,
                                   color: Color.fromRGBO(0, 0, 0, 0.54),
                                 ),
                                 decoration: BoxDecoration(
@@ -361,7 +451,11 @@ class WhenLabSelect extends StatelessWidget {
                           ),
                           Row(
                             children: [
-                              Text('Iron Deficiency'),
+                              Text(
+                                'Iron Deficiency',
+                                style: TextStyle(
+                                    fontFamily: 'Nunito', fontSize: 13),
+                              ),
                               SizedBox(
                                 width: 10,
                               ),
@@ -370,7 +464,7 @@ class WhenLabSelect extends StatelessWidget {
                                 height: 15,
                                 child: Icon(
                                   Icons.arrow_forward_ios,
-                                  size: 10,
+                                  size: 9,
                                   color: Color.fromRGBO(0, 0, 0, 0.54),
                                 ),
                                 decoration: BoxDecoration(
@@ -384,7 +478,7 @@ class WhenLabSelect extends StatelessWidget {
                     ),
                   ),
                 ),
-              ),
+              ), //3rd container
               SizedBox(
                 height: 10,
               ),
@@ -394,12 +488,18 @@ class WhenLabSelect extends StatelessWidget {
               SizedBox(
                 height: 10,
               ),
-              Text('About Test'),
+              Text(
+                'About Test',
+                style: TextStyle(fontFamily: 'Nunito', fontSize: 15),
+              ),
               SizedBox(
                 height: 15,
               ),
               Text(
-                  'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. '),
+                'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ',
+                style: TextStyle(
+                    fontFamily: 'Nunito', fontSize: 13, color: Colors.black),
+              ),
               SizedBox(
                 height: 10,
               ),
@@ -436,13 +536,19 @@ class WhenLabSelect extends StatelessWidget {
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Icon(Icons.home),
+                                  Icon(
+                                    Icons.home,
+                                    color: Color(0xff808080),
+                                  ),
                                   SizedBox(
                                     width: 3,
                                   ),
                                   Text(
                                     'Free home sample\ncollection',
-                                    style: TextStyle(fontSize: 13.5),
+                                    style: TextStyle(
+                                        fontFamily: 'Nunito',
+                                        fontSize: 13.5,
+                                        color: Color(0xff808080)),
                                   )
                                 ],
                               ),
@@ -472,13 +578,19 @@ class WhenLabSelect extends StatelessWidget {
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Icon(Icons.assistant),
+                                  Icon(
+                                    Icons.assistant,
+                                    color: Color(0xff808080),
+                                  ),
                                   SizedBox(
                                     width: 3,
                                   ),
                                   Text(
                                     'Complementary    \nfree services',
-                                    style: TextStyle(fontSize: 13.5),
+                                    style: TextStyle(
+                                        fontFamily: 'Nunito',
+                                        fontSize: 13.5,
+                                        color: Color(0xff808080)),
                                   )
                                 ],
                               ),
@@ -512,13 +624,19 @@ class WhenLabSelect extends StatelessWidget {
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Icon(Icons.assessment),
+                                  Icon(
+                                    Icons.assessment,
+                                    color: Color(0xff808080),
+                                  ),
                                   SizedBox(
                                     width: 3,
                                   ),
                                   Text(
                                     'Online and home    \ndelivery report',
-                                    style: TextStyle(fontSize: 13.5),
+                                    style: TextStyle(
+                                        fontFamily: 'Nunito',
+                                        fontSize: 13.5,
+                                        color: Color(0xff808080)),
                                   )
                                 ],
                               ),
@@ -548,13 +666,19 @@ class WhenLabSelect extends StatelessWidget {
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Icon(Icons.verified_user),
+                                  Icon(
+                                    Icons.verified_user,
+                                    color: Color(0xff808080),
+                                  ),
                                   SizedBox(
                                     width: 3,
                                   ),
                                   Text(
                                     'Certified laboratory\npartner',
-                                    style: TextStyle(fontSize: 13.5),
+                                    style: TextStyle(
+                                        fontFamily: 'Nunito',
+                                        fontSize: 13.5,
+                                        color: Color(0xff808080)),
                                   )
                                 ],
                               ),
@@ -572,14 +696,38 @@ class WhenLabSelect extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text('100% SAFE'),
-                  Text('RELIABLE'),
-                  Text('TRUSTED'),
-                  Text('QUALITY SERVICE')
+                  Text(
+                    '100% SAFE',
+                    style: TextStyle(
+                        color: Color(0xff808080),
+                        fontFamily: 'Nunito',
+                        fontSize: 12),
+                  ),
+                  Text(
+                    'RELIABLE',
+                    style: TextStyle(
+                        color: Color(0xff808080),
+                        fontFamily: 'Nunito',
+                        fontSize: 12),
+                  ),
+                  Text(
+                    'TRUSTED',
+                    style: TextStyle(
+                        color: Color(0xff808080),
+                        fontFamily: 'Nunito',
+                        fontSize: 12),
+                  ),
+                  Text(
+                    'QUALITY SERVICE',
+                    style: TextStyle(
+                        color: Color(0xff808080),
+                        fontFamily: 'Nunito',
+                        fontSize: 12),
+                  )
                 ],
               ),
               SizedBox(
-                height: 10,
+                height: 7,
               ),
               Divider(
                 thickness: 1,
@@ -608,7 +756,13 @@ class WhenLabSelect extends StatelessWidget {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
-                              Text('Other lab prices'),
+                              Text(
+                                'Other lab prices',
+                                style: TextStyle(
+                                    fontFamily: 'Nunito',
+                                    color: Color(0xff808080),
+                                    fontSize: 15),
+                              ),
                             ],
                           ), //trusted
                           SizedBox(
@@ -648,7 +802,16 @@ class WhenLabSelect extends StatelessWidget {
                                           Row(
                                             mainAxisAlignment:
                                                 MainAxisAlignment.center,
-                                            children: [Text('Thyrocare')],
+                                            children: [
+                                              Text(
+                                                'Thyrocare',
+                                                style: TextStyle(
+                                                  fontFamily: 'Nunito',
+                                                  color: Color(0xff808080),
+                                                  fontSize: 13,
+                                                ),
+                                              )
+                                            ],
                                           ),
                                           SizedBox(
                                             height: 5,
@@ -656,7 +819,15 @@ class WhenLabSelect extends StatelessWidget {
                                           Row(
                                             mainAxisAlignment:
                                                 MainAxisAlignment.center,
-                                            children: [Text(r'$400')],
+                                            children: [
+                                              Text(
+                                                r'$400',
+                                                style: TextStyle(
+                                                  fontFamily: 'Nunito',
+                                                  fontSize: 13,
+                                                ),
+                                              )
+                                            ],
                                           ),
                                         ],
                                       ),
@@ -698,7 +869,16 @@ class WhenLabSelect extends StatelessWidget {
                                           Row(
                                             mainAxisAlignment:
                                                 MainAxisAlignment.center,
-                                            children: [Text('HAMMH')],
+                                            children: [
+                                              Text(
+                                                'HAMMH',
+                                                style: TextStyle(
+                                                  fontFamily: 'Nunito',
+                                                  color: Color(0xff808080),
+                                                  fontSize: 13,
+                                                ),
+                                              )
+                                            ],
                                           ),
                                           SizedBox(
                                             height: 5,
@@ -706,7 +886,15 @@ class WhenLabSelect extends StatelessWidget {
                                           Row(
                                             mainAxisAlignment:
                                                 MainAxisAlignment.center,
-                                            children: [Text(r'$400')],
+                                            children: [
+                                              Text(
+                                                r'$400',
+                                                style: TextStyle(
+                                                  fontFamily: 'Nunito',
+                                                  fontSize: 13,
+                                                ),
+                                              )
+                                            ],
                                           ),
                                         ],
                                       ),

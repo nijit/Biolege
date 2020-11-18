@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:biolege/main.dart';
 import 'package:flutter/painting.dart';
 import 'package:biolege/ViewAllPageProfile.dart';
+//This is Select From Lab page
 
 class ViewAllPage extends StatelessWidget {
   @override
@@ -53,7 +54,12 @@ class ViewAllPage extends StatelessWidget {
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
-                children: [Text('Thyrocare')],
+                children: [
+                  Text(
+                    'Thyrocare',
+                    style: TextStyle(fontFamily: 'Nunito', fontSize: 20),
+                  )
+                ],
               ), //Thyrocare
               SizedBox(
                 height: 15,
@@ -80,7 +86,7 @@ class ViewAllPage extends StatelessWidget {
                         child: Text(
                           'Single',
                           style: TextStyle(
-                              color: Colors.black,
+                              color: Color(0xff0076FF),
                               fontSize: 15,
                               fontFamily: 'Nunito',
                               fontWeight: FontWeight.w300),
@@ -177,13 +183,25 @@ class ViewAllPage extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Row(
-                              children: [Text('HbA1c')],
+                              children: [
+                                Text(
+                                  'HbA1c',
+                                  style: TextStyle(
+                                      fontFamily: 'Nunito', fontSize: 15),
+                                )
+                              ],
                             ),
                             SizedBox(
                               height: 10,
                             ),
                             Row(
-                              children: [Text('₹480')],
+                              children: [
+                                Text(
+                                  '₹480',
+                                  style: TextStyle(
+                                      fontFamily: 'Nunito', fontSize: 13),
+                                )
+                              ],
                             ),
                           ],
                         ),
@@ -191,13 +209,16 @@ class ViewAllPage extends StatelessWidget {
                           children: [
                             Container(
                                 padding: EdgeInsets.symmetric(
-                                    horizontal: 4, vertical: 3),
+                                    horizontal: 5, vertical: 1),
                                 decoration: BoxDecoration(
                                     border: Border.all(
                                         color: Colors.grey.withOpacity(.4))),
                                 child: Text(
                                   '+ Add',
-                                  style: TextStyle(color: Colors.orangeAccent),
+                                  style: TextStyle(
+                                      fontSize: 12,
+                                      fontFamily: 'Nunito',
+                                      color: Color(0xffFF8900)),
                                 ))
                           ],
                         ),
@@ -231,13 +252,25 @@ class ViewAllPage extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Row(
-                              children: [Text('CRP')],
+                              children: [
+                                Text(
+                                  'CRP',
+                                  style: TextStyle(
+                                      fontFamily: 'Nunito', fontSize: 15),
+                                )
+                              ],
                             ),
                             SizedBox(
                               height: 10,
                             ),
                             Row(
-                              children: [Text('₹480')],
+                              children: [
+                                Text(
+                                  '₹480',
+                                  style: TextStyle(
+                                      fontFamily: 'Nunito', fontSize: 13),
+                                )
+                              ],
                             ),
                           ],
                         ),
@@ -245,13 +278,16 @@ class ViewAllPage extends StatelessWidget {
                           children: [
                             Container(
                                 padding: EdgeInsets.symmetric(
-                                    horizontal: 4, vertical: 3),
+                                    horizontal: 5, vertical: 1),
                                 decoration: BoxDecoration(
                                     border: Border.all(
                                         color: Colors.grey.withOpacity(.4))),
                                 child: Text(
                                   '+ Add',
-                                  style: TextStyle(color: Colors.orangeAccent),
+                                  style: TextStyle(
+                                      fontSize: 12,
+                                      fontFamily: 'Nunito',
+                                      color: Color(0xffFF8900)),
                                 ))
                           ],
                         ),

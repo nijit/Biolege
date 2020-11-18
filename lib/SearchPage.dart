@@ -74,7 +74,13 @@ class SearchPage extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
-                      Text('Thyroid profile, total'),
+                      Text(
+                        'Thyroid profile, total',
+                        style: TextStyle(
+                            fontFamily: 'Nunito',
+                            fontSize: 15,
+                            fontWeight: FontWeight.w600),
+                      ),
                     ],
                   ),
                   SizedBox(
@@ -82,7 +88,15 @@ class SearchPage extends StatelessWidget {
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.start,
-                    children: [Text('Select lab from the results')],
+                    children: [
+                      Text(
+                        'Select lab from the results',
+                        style: TextStyle(
+                          fontFamily: 'Nunito',
+                          fontSize: 13,
+                        ),
+                      )
+                    ],
                   ), //Select lab from the results
                   SizedBox(
                     height: 15,
@@ -110,8 +124,14 @@ class SearchPage extends StatelessWidget {
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Text('Thyrocare'),
-                                  Text('₹400'),
+                                  Text(
+                                    'Thyrocare',
+                                    style: TextStyle(fontFamily: 'Nunito'),
+                                  ),
+                                  Text(
+                                    '₹400',
+                                    style: TextStyle(fontFamily: 'Nunito'),
+                                  ),
                                 ],
                               ), //Tyrocare400
                               SizedBox(
@@ -121,16 +141,32 @@ class SearchPage extends StatelessWidget {
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Text('Report'),
+                                  Text(
+                                    'Report',
+                                    style: TextStyle(
+                                        fontFamily: 'Nunito',
+                                        fontSize: 12,
+                                        color: Color(0xff808080)),
+                                  ),
                                   DottedBorder(
                                       color: Colors.green,
                                       strokeWidth: 1,
-                                      child: Text('40 % off')),
+                                      child: Text(
+                                        '40 % off',
+                                        style: TextStyle(
+                                            fontFamily: 'Nunito', fontSize: 12),
+                                      )),
                                 ],
                               ), //40%Off
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.start,
-                                children: [Text('24 hrs-48 hrs')],
+                                children: [
+                                  Text(
+                                    '24 hrs-48 hrs',
+                                    style: TextStyle(
+                                        fontFamily: 'Nunito', fontSize: 12),
+                                  )
+                                ],
                               ),
                               SizedBox(
                                 height: 10,
@@ -153,7 +189,7 @@ class SearchPage extends StatelessWidget {
                                     children: [
                                       Container(
                                         decoration: BoxDecoration(
-                                          color: Colors.orangeAccent,
+                                          color: Color(0xffFF8900),
                                         ),
                                         child: Padding(
                                           padding: EdgeInsets.symmetric(
@@ -189,18 +225,24 @@ class SearchPage extends StatelessWidget {
                                 children: [
                                   Text(
                                     '+ complementery services free from biolege',
-                                    style: TextStyle(fontSize: 9),
+                                    style: TextStyle(
+                                        fontFamily: 'Nunito',
+                                        fontSize: 10,
+                                        color: Color(0xff808080)),
                                   ),
                                   Container(
                                     padding: EdgeInsets.symmetric(
                                         horizontal: 5, vertical: 3),
                                     decoration: BoxDecoration(
-                                        color: Colors.orangeAccent,
+                                        color: Color(0xffFF8900),
                                         borderRadius: BorderRadius.all(
                                             Radius.circular(4))),
                                     child: Text(
                                       'Add to cart',
-                                      style: TextStyle(color: Colors.white),
+                                      style: TextStyle(
+                                          fontFamily: 'Nunito',
+                                          fontSize: 12,
+                                          color: Colors.white),
                                     ),
                                   )
                                 ],
@@ -237,10 +279,16 @@ class SearchPage extends StatelessWidget {
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Text('Thyrocare'),
-                                  Text('₹400'),
+                                  Text(
+                                    'Dr Lal Pathlabs',
+                                    style: TextStyle(fontFamily: 'Nunito'),
+                                  ),
+                                  Text(
+                                    '₹660',
+                                    style: TextStyle(fontFamily: 'Nunito'),
+                                  ),
                                 ],
-                              ), //Tyrocare400
+                              ), //Dr Lal Pathlabs
                               SizedBox(
                                 height: 5,
                               ),
@@ -248,16 +296,32 @@ class SearchPage extends StatelessWidget {
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Text('Report'),
+                                  Text(
+                                    'Report',
+                                    style: TextStyle(
+                                        fontFamily: 'Nunito',
+                                        fontSize: 12,
+                                        color: Color(0xff808080)),
+                                  ),
                                   DottedBorder(
                                       color: Colors.green,
                                       strokeWidth: 1,
-                                      child: Text('40 % off')),
+                                      child: Text(
+                                        '50 % off',
+                                        style: TextStyle(
+                                            fontFamily: 'Nunito', fontSize: 12),
+                                      )),
                                 ],
                               ), //40%Off
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.start,
-                                children: [Text('24 hrs-48 hrs')],
+                                children: [
+                                  Text(
+                                    '24 hrs-48 hrs',
+                                    style: TextStyle(
+                                        fontFamily: 'Nunito', fontSize: 12),
+                                  )
+                                ],
                               ),
                               SizedBox(
                                 height: 10,
@@ -268,7 +332,7 @@ class SearchPage extends StatelessWidget {
                                   Column(
                                     children: [
                                       Image.asset(
-                                        'images/Thyrocare.png',
+                                        'images/one.png',
                                         height: 30,
                                       )
                                     ],
@@ -280,7 +344,7 @@ class SearchPage extends StatelessWidget {
                                     children: [
                                       Container(
                                         decoration: BoxDecoration(
-                                          color: Colors.orangeAccent,
+                                          color: Color(0xffFF8900),
                                         ),
                                         child: Padding(
                                           padding: EdgeInsets.symmetric(
@@ -316,18 +380,24 @@ class SearchPage extends StatelessWidget {
                                 children: [
                                   Text(
                                     '+ complementery services free from biolege',
-                                    style: TextStyle(fontSize: 9),
+                                    style: TextStyle(
+                                        fontFamily: 'Nunito',
+                                        fontSize: 10,
+                                        color: Color(0xff808080)),
                                   ),
                                   Container(
                                     padding: EdgeInsets.symmetric(
                                         horizontal: 5, vertical: 3),
                                     decoration: BoxDecoration(
-                                        color: Colors.orangeAccent,
+                                        color: Color(0xffFF8900),
                                         borderRadius: BorderRadius.all(
                                             Radius.circular(4))),
                                     child: Text(
                                       'Add to cart',
-                                      style: TextStyle(color: Colors.white),
+                                      style: TextStyle(
+                                          fontFamily: 'Nunito',
+                                          fontSize: 12,
+                                          color: Colors.white),
                                     ),
                                   )
                                 ],
@@ -342,7 +412,8 @@ class SearchPage extends StatelessWidget {
                     height: 30,
                   ),
                   Container(
-                      padding: EdgeInsets.symmetric(horizontal: 5, vertical: 4),
+                      padding:
+                          EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                       decoration: BoxDecoration(
                           color: Color(0xffFF8900),
                           borderRadius: BorderRadius.all(Radius.circular(4))),
@@ -358,7 +429,10 @@ class SearchPage extends StatelessWidget {
                                     children: [
                                       Text(
                                         '1 test',
-                                        style: TextStyle(color: Colors.white),
+                                        style: TextStyle(
+                                            fontFamily: 'Nunito',
+                                            fontSize: 15,
+                                            color: Colors.white),
                                       ),
                                     ],
                                   ), //1test
@@ -366,7 +440,10 @@ class SearchPage extends StatelessWidget {
                                     children: [
                                       Text(
                                         'Selected',
-                                        style: TextStyle(color: Colors.white),
+                                        style: TextStyle(
+                                            fontFamily: 'Nunito',
+                                            fontSize: 11,
+                                            color: Colors.white),
                                       ),
                                     ],
                                   ), //selected
@@ -378,6 +455,7 @@ class SearchPage extends StatelessWidget {
                               Column(
                                 children: [
                                   Container(
+                                    margin: EdgeInsets.only(left: 5, right: 5),
                                     width: 1,
                                     height: 30,
                                     color: Colors.white,
@@ -394,7 +472,10 @@ class SearchPage extends StatelessWidget {
                                     children: [
                                       Text(
                                         'Lab',
-                                        style: TextStyle(color: Colors.white),
+                                        style: TextStyle(
+                                            fontFamily: 'Nunito',
+                                            fontSize: 13,
+                                            color: Colors.white),
                                       ),
                                     ],
                                   ), //1test
@@ -402,7 +483,10 @@ class SearchPage extends StatelessWidget {
                                     children: [
                                       Text(
                                         'Select Lab',
-                                        style: TextStyle(color: Colors.white),
+                                        style: TextStyle(
+                                            fontFamily: 'Nunito',
+                                            fontSize: 13,
+                                            color: Colors.white),
                                       ),
                                     ],
                                   ),
@@ -415,11 +499,15 @@ class SearchPage extends StatelessWidget {
                             children: [
                               Text(
                                 'Schedule sample pickup',
-                                style: TextStyle(color: Colors.white),
+                                style: TextStyle(
+                                    fontFamily: 'Nunito',
+                                    fontSize: 14,
+                                    color: Colors.white),
                               ),
                               Icon(
                                 Icons.arrow_forward,
                                 color: Colors.white,
+                                size: 15,
                               )
                             ],
                           ),

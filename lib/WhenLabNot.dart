@@ -76,7 +76,12 @@ class WhenLabNot extends StatelessWidget {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text('Select laboratory'),
+                              Text(
+                                'Select laboratory',
+                                style: TextStyle(
+                                    fontFamily: 'Nunito',
+                                    color: Color(0xff808080)),
+                              ),
                               Container(
                                 decoration: BoxDecoration(
                                   color: Color.fromRGBO(1, 188, 8, 1),
@@ -141,7 +146,14 @@ class WhenLabNot extends StatelessWidget {
                                           Row(
                                             mainAxisAlignment:
                                                 MainAxisAlignment.center,
-                                            children: [Text('Dr Lal Pathlabs')],
+                                            children: [
+                                              Text(
+                                                'Dr Lal Pathlabs',
+                                                style: TextStyle(
+                                                    fontFamily: 'Nunito',
+                                                    fontSize: 13),
+                                              )
+                                            ],
                                           ),
                                           SizedBox(
                                             height: 5,
@@ -149,7 +161,14 @@ class WhenLabNot extends StatelessWidget {
                                           Row(
                                             mainAxisAlignment:
                                                 MainAxisAlignment.center,
-                                            children: [Text(r'$400')],
+                                            children: [
+                                              Text(
+                                                r'$400',
+                                                style: TextStyle(
+                                                    fontFamily: 'Nunito',
+                                                    fontSize: 13),
+                                              )
+                                            ],
                                           ),
                                         ],
                                       ),
@@ -180,7 +199,7 @@ class WhenLabNot extends StatelessWidget {
                                                 MainAxisAlignment.center,
                                             children: [
                                               Image.asset(
-                                                'images/one.png',
+                                                'images/Thyrocare.png',
                                                 height: 30,
                                               )
                                             ],
@@ -191,7 +210,14 @@ class WhenLabNot extends StatelessWidget {
                                           Row(
                                             mainAxisAlignment:
                                                 MainAxisAlignment.center,
-                                            children: [Text('Dr Lal Pathlabs')],
+                                            children: [
+                                              Text(
+                                                'Dr Lal Pathlabs',
+                                                style: TextStyle(
+                                                    fontFamily: 'Nunito',
+                                                    fontSize: 13),
+                                              )
+                                            ],
                                           ),
                                           SizedBox(
                                             height: 5,
@@ -199,7 +225,14 @@ class WhenLabNot extends StatelessWidget {
                                           Row(
                                             mainAxisAlignment:
                                                 MainAxisAlignment.center,
-                                            children: [Text(r'$400')],
+                                            children: [
+                                              Text(
+                                                r'$400',
+                                                style: TextStyle(
+                                                    fontFamily: 'Nunito',
+                                                    fontSize: 13),
+                                              )
+                                            ],
                                           ),
                                         ],
                                       ),
@@ -240,13 +273,33 @@ class WhenLabNot extends StatelessWidget {
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text('Total tests'),
-                              Text('3'),
+                              Text(
+                                'Total tests',
+                                style: TextStyle(
+                                    color: Color(0xff808080),
+                                    fontFamily: 'Nunito',
+                                    fontSize: 13),
+                              ),
+                              Text(
+                                '3',
+                                style: TextStyle(
+                                    fontFamily: 'Nunito', fontSize: 13),
+                              ),
                               SizedBox(
                                 height: 10,
                               ),
-                              Text('Test preparation'),
-                              Text('No preparation required '),
+                              Text(
+                                'Test preparation',
+                                style: TextStyle(
+                                    color: Color(0xff808080),
+                                    fontFamily: 'Nunito',
+                                    fontSize: 13),
+                              ),
+                              Text(
+                                'No preparation required ',
+                                style: TextStyle(
+                                    fontFamily: 'Nunito', fontSize: 13),
+                              ),
                             ],
                           ),
                           Container(
@@ -257,13 +310,33 @@ class WhenLabNot extends StatelessWidget {
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text('Sample type'),
-                              Text('Blood'),
+                              Text(
+                                'Sample type',
+                                style: TextStyle(
+                                    color: Color(0xff808080),
+                                    fontFamily: 'Nunito',
+                                    fontSize: 13),
+                              ),
+                              Text(
+                                'Blood',
+                                style: TextStyle(
+                                    fontFamily: 'Nunito', fontSize: 13),
+                              ),
                               SizedBox(
                                 height: 10,
                               ),
-                              Text('Report delivery'),
-                              Text('Within 24 hrs - 48 hrs'),
+                              Text(
+                                'Report delivery',
+                                style: TextStyle(
+                                    color: Color(0xff808080),
+                                    fontFamily: 'Nunito',
+                                    fontSize: 13),
+                              ),
+                              Text(
+                                'Within 24 hrs - 48 hrs',
+                                style: TextStyle(
+                                    fontFamily: 'Nunito', fontSize: 13),
+                              ),
                             ],
                           )
                         ],
@@ -271,7 +344,7 @@ class WhenLabNot extends StatelessWidget {
                     ),
                   ),
                 ),
-              ),
+              ), //2ndCard
               SizedBox(
                 height: 15,
               ),
@@ -295,14 +368,31 @@ class WhenLabNot extends StatelessWidget {
                         children: [
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [Text('Test included'), Text('30 tests')],
+                            children: [
+                              Text(
+                                'Test included',
+                                style: TextStyle(
+                                    fontFamily: 'Nunito', fontSize: 15),
+                              ),
+                              Text(
+                                '30 tests',
+                                style: TextStyle(
+                                    color: Color(0xff808080),
+                                    fontFamily: 'Nunito',
+                                    fontSize: 15),
+                              )
+                            ],
                           ), //Test Included,
                           SizedBox(
-                            height: 10,
+                            height: 20,
                           ),
                           Row(
                             children: [
-                              Text('Kidney Profile'),
+                              Text(
+                                'Kidney Profile',
+                                style: TextStyle(
+                                    fontFamily: 'Nunito', fontSize: 13),
+                              ),
                               SizedBox(
                                 width: 10,
                               ),
@@ -311,7 +401,7 @@ class WhenLabNot extends StatelessWidget {
                                 height: 15,
                                 child: Icon(
                                   Icons.arrow_forward_ios,
-                                  size: 10,
+                                  size: 9,
                                   color: Color.fromRGBO(0, 0, 0, 0.54),
                                 ),
                                 decoration: BoxDecoration(
@@ -325,7 +415,11 @@ class WhenLabNot extends StatelessWidget {
                           ),
                           Row(
                             children: [
-                              Text('Lipid Profile'),
+                              Text(
+                                'Lipid Profile',
+                                style: TextStyle(
+                                    fontFamily: 'Nunito', fontSize: 13),
+                              ),
                               SizedBox(
                                 width: 10,
                               ),
@@ -334,7 +428,7 @@ class WhenLabNot extends StatelessWidget {
                                 height: 15,
                                 child: Icon(
                                   Icons.arrow_forward_ios,
-                                  size: 10,
+                                  size: 9,
                                   color: Color.fromRGBO(0, 0, 0, 0.54),
                                 ),
                                 decoration: BoxDecoration(
@@ -348,7 +442,11 @@ class WhenLabNot extends StatelessWidget {
                           ),
                           Row(
                             children: [
-                              Text('Liver Profile'),
+                              Text(
+                                'Liver Profile',
+                                style: TextStyle(
+                                    fontFamily: 'Nunito', fontSize: 13),
+                              ),
                               SizedBox(
                                 width: 10,
                               ),
@@ -357,7 +455,7 @@ class WhenLabNot extends StatelessWidget {
                                 height: 15,
                                 child: Icon(
                                   Icons.arrow_forward_ios,
-                                  size: 10,
+                                  size: 9,
                                   color: Color.fromRGBO(0, 0, 0, 0.54),
                                 ),
                                 decoration: BoxDecoration(
@@ -371,7 +469,11 @@ class WhenLabNot extends StatelessWidget {
                           ),
                           Row(
                             children: [
-                              Text('Thyroid Profile'),
+                              Text(
+                                'Thyroid Profile',
+                                style: TextStyle(
+                                    fontFamily: 'Nunito', fontSize: 13),
+                              ),
                               SizedBox(
                                 width: 10,
                               ),
@@ -380,7 +482,7 @@ class WhenLabNot extends StatelessWidget {
                                 height: 15,
                                 child: Icon(
                                   Icons.arrow_forward_ios,
-                                  size: 10,
+                                  size: 9,
                                   color: Color.fromRGBO(0, 0, 0, 0.54),
                                 ),
                                 decoration: BoxDecoration(
@@ -394,7 +496,11 @@ class WhenLabNot extends StatelessWidget {
                           ),
                           Row(
                             children: [
-                              Text('Iron Deficiency'),
+                              Text(
+                                'Iron Deficiency',
+                                style: TextStyle(
+                                    fontFamily: 'Nunito', fontSize: 13),
+                              ),
                               SizedBox(
                                 width: 10,
                               ),
@@ -403,7 +509,7 @@ class WhenLabNot extends StatelessWidget {
                                 height: 15,
                                 child: Icon(
                                   Icons.arrow_forward_ios,
-                                  size: 10,
+                                  size: 9,
                                   color: Color.fromRGBO(0, 0, 0, 0.54),
                                 ),
                                 decoration: BoxDecoration(
@@ -417,7 +523,7 @@ class WhenLabNot extends StatelessWidget {
                     ),
                   ),
                 ),
-              ),
+              ), //3rd container
               SizedBox(
                 height: 10,
               ),
@@ -427,12 +533,18 @@ class WhenLabNot extends StatelessWidget {
               SizedBox(
                 height: 10,
               ),
-              Text('About Test'),
+              Text(
+                'About Test',
+                style: TextStyle(fontFamily: 'Nunito', fontSize: 15),
+              ),
               SizedBox(
                 height: 15,
               ),
               Text(
-                  'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. '),
+                'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ',
+                style: TextStyle(
+                    fontFamily: 'Nunito', fontSize: 13, color: Colors.black),
+              ),
               SizedBox(
                 height: 10,
               ),
@@ -469,13 +581,19 @@ class WhenLabNot extends StatelessWidget {
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Icon(Icons.home),
+                                  Icon(
+                                    Icons.home,
+                                    color: Color(0xff808080),
+                                  ),
                                   SizedBox(
                                     width: 3,
                                   ),
                                   Text(
                                     'Free home sample\ncollection',
-                                    style: TextStyle(fontSize: 13.5),
+                                    style: TextStyle(
+                                        fontFamily: 'Nunito',
+                                        fontSize: 13.5,
+                                        color: Color(0xff808080)),
                                   )
                                 ],
                               ),
@@ -505,13 +623,19 @@ class WhenLabNot extends StatelessWidget {
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Icon(Icons.assistant),
+                                  Icon(
+                                    Icons.assistant,
+                                    color: Color(0xff808080),
+                                  ),
                                   SizedBox(
                                     width: 3,
                                   ),
                                   Text(
                                     'Complementary    \nfree services',
-                                    style: TextStyle(fontSize: 13.5),
+                                    style: TextStyle(
+                                        fontFamily: 'Nunito',
+                                        fontSize: 13.5,
+                                        color: Color(0xff808080)),
                                   )
                                 ],
                               ),
@@ -545,13 +669,19 @@ class WhenLabNot extends StatelessWidget {
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Icon(Icons.assessment),
+                                  Icon(
+                                    Icons.assessment,
+                                    color: Color(0xff808080),
+                                  ),
                                   SizedBox(
                                     width: 3,
                                   ),
                                   Text(
                                     'Online and home    \ndelivery report',
-                                    style: TextStyle(fontSize: 13.5),
+                                    style: TextStyle(
+                                        fontFamily: 'Nunito',
+                                        fontSize: 13.5,
+                                        color: Color(0xff808080)),
                                   )
                                 ],
                               ),
@@ -581,13 +711,19 @@ class WhenLabNot extends StatelessWidget {
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Icon(Icons.verified_user),
+                                  Icon(
+                                    Icons.verified_user,
+                                    color: Color(0xff808080),
+                                  ),
                                   SizedBox(
                                     width: 3,
                                   ),
                                   Text(
                                     'Certified laboratory\npartner',
-                                    style: TextStyle(fontSize: 13.5),
+                                    style: TextStyle(
+                                        fontFamily: 'Nunito',
+                                        fontSize: 13.5,
+                                        color: Color(0xff808080)),
                                   )
                                 ],
                               ),
@@ -605,14 +741,38 @@ class WhenLabNot extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text('100% SAFE'),
-                  Text('RELIABLE'),
-                  Text('TRUSTED'),
-                  Text('QUALITY SERVICE')
+                  Text(
+                    '100% SAFE',
+                    style: TextStyle(
+                        color: Color(0xff808080),
+                        fontFamily: 'Nunito',
+                        fontSize: 12),
+                  ),
+                  Text(
+                    'RELIABLE',
+                    style: TextStyle(
+                        color: Color(0xff808080),
+                        fontFamily: 'Nunito',
+                        fontSize: 12),
+                  ),
+                  Text(
+                    'TRUSTED',
+                    style: TextStyle(
+                        color: Color(0xff808080),
+                        fontFamily: 'Nunito',
+                        fontSize: 12),
+                  ),
+                  Text(
+                    'QUALITY SERVICE',
+                    style: TextStyle(
+                        color: Color(0xff808080),
+                        fontFamily: 'Nunito',
+                        fontSize: 12),
+                  )
                 ],
               ),
               SizedBox(
-                height: 10,
+                height: 7,
               ),
               Divider(
                 thickness: 1,
